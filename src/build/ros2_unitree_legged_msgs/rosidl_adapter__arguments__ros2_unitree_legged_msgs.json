@@ -1,0 +1,16 @@
+{
+  "package_name": "ros2_unitree_legged_msgs",
+  "non_idl_tuples": [
+    "/home/syx/ros2_ws/src/ros2_unitree_legged_msgs:msg/MotorCmd.msg",
+    "/home/syx/ros2_ws/src/ros2_unitree_legged_msgs:msg/MotorState.msg",
+    "/home/syx/ros2_ws/src/ros2_unitree_legged_msgs:msg/BmsCmd.msg",
+    "/home/syx/ros2_ws/src/ros2_unitree_legged_msgs:msg/BmsState.msg",
+    "/home/syx/ros2_ws/src/ros2_unitree_legged_msgs:msg/Cartesian.msg",
+    "/home/syx/ros2_ws/src/ros2_unitree_legged_msgs:msg/IMU.msg",
+    "/home/syx/ros2_ws/src/ros2_unitree_legged_msgs:msg/LED.msg",
+    "/home/syx/ros2_ws/src/ros2_unitree_legged_msgs:msg/LowCmd.msg",
+    "/home/syx/ros2_ws/src/ros2_unitree_legged_msgs:msg/LowState.msg",
+    "/home/syx/ros2_ws/src/ros2_unitree_legged_msgs:msg/HighCmd.msg",
+    "/home/syx/ros2_ws/src/ros2_unitree_legged_msgs:msg/HighState.msg"
+  ]
+}

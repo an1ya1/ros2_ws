@@ -1,0 +1,50 @@
+[0.515s] Invoking command in '/home/syx/ros2_ws/src/go1_sim/go1_navigation': PYTHONPATH=/home/syx/ros2_ws/src/build/go1_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/syx/ros2_ws/src/install/go1_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/go1_navigation build --build-base /home/syx/ros2_ws/src/build/go1_navigation/build install --record /home/syx/ros2_ws/src/build/go1_navigation/install.log --single-version-externally-managed install_data
+[0.674s] running egg_info
+[0.675s] creating ../../build/go1_navigation/go1_navigation.egg-info
+[0.675s] writing ../../build/go1_navigation/go1_navigation.egg-info/PKG-INFO
+[0.675s] writing dependency_links to ../../build/go1_navigation/go1_navigation.egg-info/dependency_links.txt
+[0.675s] writing entry points to ../../build/go1_navigation/go1_navigation.egg-info/entry_points.txt
+[0.675s] writing requirements to ../../build/go1_navigation/go1_navigation.egg-info/requires.txt
+[0.675s] writing top-level names to ../../build/go1_navigation/go1_navigation.egg-info/top_level.txt
+[0.676s] writing manifest file '../../build/go1_navigation/go1_navigation.egg-info/SOURCES.txt'
+[0.677s] reading manifest file '../../build/go1_navigation/go1_navigation.egg-info/SOURCES.txt'
+[0.677s] adding license file 'LICENSE'
+[0.677s] writing manifest file '../../build/go1_navigation/go1_navigation.egg-info/SOURCES.txt'
+[0.677s] running build
+[0.677s] running build_py
+[0.677s] creating /home/syx/ros2_ws/src/build/go1_navigation/build
+[0.678s] creating /home/syx/ros2_ws/src/build/go1_navigation/build/lib
+[0.678s] creating /home/syx/ros2_ws/src/build/go1_navigation/build/lib/go1_navigation
+[0.678s] copying go1_navigation/static_map_publisher.py -> /home/syx/ros2_ws/src/build/go1_navigation/build/lib/go1_navigation
+[0.678s] copying go1_navigation/tf_publisher.py -> /home/syx/ros2_ws/src/build/go1_navigation/build/lib/go1_navigation
+[0.678s] copying go1_navigation/__init__.py -> /home/syx/ros2_ws/src/build/go1_navigation/build/lib/go1_navigation
+[0.678s] running install
+[0.678s] running install_lib
+[0.679s] creating /home/syx/ros2_ws/src/install/go1_navigation/lib/python3.10/site-packages/go1_navigation
+[0.679s] copying /home/syx/ros2_ws/src/build/go1_navigation/build/lib/go1_navigation/static_map_publisher.py -> /home/syx/ros2_ws/src/install/go1_navigation/lib/python3.10/site-packages/go1_navigation
+[0.679s] copying /home/syx/ros2_ws/src/build/go1_navigation/build/lib/go1_navigation/tf_publisher.py -> /home/syx/ros2_ws/src/install/go1_navigation/lib/python3.10/site-packages/go1_navigation
+[0.679s] copying /home/syx/ros2_ws/src/build/go1_navigation/build/lib/go1_navigation/__init__.py -> /home/syx/ros2_ws/src/install/go1_navigation/lib/python3.10/site-packages/go1_navigation
+[0.679s] byte-compiling /home/syx/ros2_ws/src/install/go1_navigation/lib/python3.10/site-packages/go1_navigation/static_map_publisher.py to static_map_publisher.cpython-310.pyc
+[0.680s] byte-compiling /home/syx/ros2_ws/src/install/go1_navigation/lib/python3.10/site-packages/go1_navigation/tf_publisher.py to tf_publisher.cpython-310.pyc
+[0.680s] byte-compiling /home/syx/ros2_ws/src/install/go1_navigation/lib/python3.10/site-packages/go1_navigation/__init__.py to __init__.cpython-310.pyc
+[0.680s] running install_data
+[0.680s] creating /home/syx/ros2_ws/src/install/go1_navigation/share/ament_index
+[0.681s] creating /home/syx/ros2_ws/src/install/go1_navigation/share/ament_index/resource_index
+[0.681s] creating /home/syx/ros2_ws/src/install/go1_navigation/share/ament_index/resource_index/packages
+[0.681s] copying resource/go1_navigation -> /home/syx/ros2_ws/src/install/go1_navigation/share/ament_index/resource_index/packages
+[0.681s] copying package.xml -> /home/syx/ros2_ws/src/install/go1_navigation/share/go1_navigation
+[0.681s] copying launch/navigation.launch.py -> /home/syx/ros2_ws/src/install/go1_navigation/share/go1_navigation
+[0.681s] creating /home/syx/ros2_ws/src/install/go1_navigation/share/go1_navigation/params
+[0.681s] copying params/nav2_params.yaml -> /home/syx/ros2_ws/src/install/go1_navigation/share/go1_navigation/params
+[0.681s] creating /home/syx/ros2_ws/src/install/go1_navigation/share/go1_navigation/xml
+[0.681s] copying xml/go1_bt.xml -> /home/syx/ros2_ws/src/install/go1_navigation/share/go1_navigation/xml
+[0.681s] creating /home/syx/ros2_ws/src/install/go1_navigation/share/go1_navigation/map
+[0.681s] copying map/map.yaml -> /home/syx/ros2_ws/src/install/go1_navigation/share/go1_navigation/map
+[0.681s] copying map/map.pgm -> /home/syx/ros2_ws/src/install/go1_navigation/share/go1_navigation/map
+[0.682s] running install_egg_info
+[0.684s] Copying ../../build/go1_navigation/go1_navigation.egg-info to /home/syx/ros2_ws/src/install/go1_navigation/lib/python3.10/site-packages/go1_navigation-0.0.0-py3.10.egg-info
+[0.684s] running install_scripts
+[0.701s] Installing nav_tf_publisher script to /home/syx/ros2_ws/src/install/go1_navigation/lib/go1_navigation
+[0.701s] Installing static_map_publisher script to /home/syx/ros2_ws/src/install/go1_navigation/lib/go1_navigation
+[0.701s] writing list of installed files to '/home/syx/ros2_ws/src/build/go1_navigation/install.log'
+[0.721s] Invoked command in '/home/syx/ros2_ws/src/go1_sim/go1_navigation' returned '0': PYTHONPATH=/home/syx/ros2_ws/src/build/go1_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/syx/ros2_ws/src/install/go1_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/go1_navigation build --build-base /home/syx/ros2_ws/src/build/go1_navigation/build install --record /home/syx/ros2_ws/src/build/go1_navigation/install.log --single-version-externally-managed install_data

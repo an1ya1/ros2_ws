@@ -1,0 +1,524 @@
+Starting >>> ros2_unitree_legged_msgs
+Starting >>> go1_description
+Starting >>> go1_gazebo
+Starting >>> go1_navigation
+Finished <<< go1_description [0.24s]
+Finished <<< go1_gazebo [0.25s]
+Finished <<< ros2_unitree_legged_msgs [0.31s]
+Starting >>> ros2_unitree_legged_control
+Starting >>> unitree_guide2
+Finished <<< unitree_guide2 [0.12s]
+Finished <<< go1_navigation [0.64s]
+--- stderr: ros2_unitree_legged_control
+In file included from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/include/ros2_unitree_legged_control/ros2_unitree_legged_control.hpp:26,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:21:
+/opt/ros/humble/include/realtime_tools/realtime_tools/realtime_buffer.h:22:100: note: ‘#pragma message: This header include is deprecated. Please update your code to use 'realtime_buffer.hpp' header.’
+   22 |   "This header include is deprecated. Please update your code to use 'realtime_buffer.hpp' header.")  //NOLINT
+      |                                                                                                    ^
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp: In constructor ‘ros2_unitree_legged_control::UnitreeLeggedController::UnitreeLeggedController()’:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:32:40: error: class ‘ros2_unitree_legged_control::UnitreeLeggedController’ does not have any field named ‘rt_controller_state_publisher_’
+   32 |   joints_command_subscriber_(nullptr), rt_controller_state_publisher_(nullptr), state_publisher_(nullptr)
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp: In member function ‘virtual controller_interface::CallbackReturn ros2_unitree_legged_control::UnitreeLeggedController::on_configure(const rclcpp_lifecycle::State&)’:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:3: error: ‘rt_controller_state_publisher_’ was not declared in this scope
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:69: error: ‘RealtimePublisher’ is not a member of ‘realtime_tools’; did you mean ‘RealtimeBuffer’?
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                     ^~~~~~~~~~~~~~~~~
+      |                                                                     RealtimeBuffer
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:41: error: parse error in template argument list
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:96: error: no match for ‘operator>’ (operand types are ‘<unresolved overloaded function type>’ and ‘rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > >::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’})
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+      |                                         |                                                         |
+      |                                         <unresolved overloaded function type>                     rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > >::SharedPtr {aka std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >}
+In file included from /usr/include/c++/11/utility:70,
+                 from /usr/include/c++/11/algorithm:60,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:15:
+/usr/include/c++/11/bits/stl_pair.h:502:5: note: candidate: ‘template<class _T1, class _T2> constexpr bool std::operator>(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)’
+  502 |     operator>(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_pair.h:502:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   ‘rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > >::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’} is not derived from ‘const std::pair<_T1, _T2>’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11/algorithm:61,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:15:
+/usr/include/c++/11/bits/stl_iterator.h:438:5: note: candidate: ‘template<class _Iterator> constexpr bool std::operator>(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)’
+  438 |     operator>(const reverse_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_iterator.h:438:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   ‘rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > >::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’} is not derived from ‘const std::reverse_iterator<_Iterator>’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11/algorithm:61,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:15:
+/usr/include/c++/11/bits/stl_iterator.h:477:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr bool std::operator>(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)’
+  477 |     operator>(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_iterator.h:477:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   ‘rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > >::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’} is not derived from ‘const std::reverse_iterator<_IteratorR>’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11/algorithm:61,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:15:
+/usr/include/c++/11/bits/stl_iterator.h:1627:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr bool std::operator>(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)’
+ 1627 |     operator>(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_iterator.h:1627:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   ‘rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > >::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’} is not derived from ‘const std::move_iterator<_IteratorR>’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11/algorithm:61,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:15:
+/usr/include/c++/11/bits/stl_iterator.h:1679:5: note: candidate: ‘template<class _Iterator> constexpr bool std::operator>(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)’
+ 1679 |     operator>(const move_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_iterator.h:1679:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   ‘rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > >::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’} is not derived from ‘const std::move_iterator<_IteratorL>’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/tuple:39,
+                 from /usr/include/c++/11/functional:54,
+                 from /usr/include/c++/11/pstl/glue_algorithm_defs.h:13,
+                 from /usr/include/c++/11/algorithm:74,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:15:
+/usr/include/c++/11/array:320:5: note: candidate: ‘template<class _Tp, long unsigned int _Nm> bool std::operator>(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)’
+  320 |     operator>(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+      |     ^~~~~~~~
+/usr/include/c++/11/array:320:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   ‘rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > >::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’} is not derived from ‘const std::array<_Tp, _Nm>’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/functional:54,
+                 from /usr/include/c++/11/pstl/glue_algorithm_defs.h:13,
+                 from /usr/include/c++/11/algorithm:74,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:15:
+/usr/include/c++/11/tuple:1585:5: note: candidate: ‘template<class ... _TElements, class ... _UElements> constexpr bool std::operator>(const std::tuple<_Tps ...>&, const std::tuple<_UTypes ...>&)’
+ 1585 |     operator>(const tuple<_TElements...>& __t,
+      |     ^~~~~~~~
+/usr/include/c++/11/tuple:1585:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   ‘rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > >::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’} is not derived from ‘const std::tuple<_UTypes ...>’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/vector:67,
+                 from /usr/include/c++/11/functional:62,
+                 from /usr/include/c++/11/pstl/glue_algorithm_defs.h:13,
+                 from /usr/include/c++/11/algorithm:74,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:15:
+/usr/include/c++/11/bits/stl_vector.h:1943:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator>(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)’
+ 1943 |     operator>(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_vector.h:1943:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   ‘rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > >::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’} is not derived from ‘const std::vector<_Tp, _Alloc>’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/memory:76,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:16:
+/usr/include/c++/11/bits/unique_ptr.h:846:5: note: candidate: ‘template<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator>(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)’
+  846 |     operator>(const unique_ptr<_Tp, _Dp>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/unique_ptr.h:846:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   ‘rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > >::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’} is not derived from ‘const std::unique_ptr<_Up, _Ep>’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/memory:76,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:16:
+/usr/include/c++/11/bits/unique_ptr.h:853:5: note: candidate: ‘template<class _Tp, class _Dp> bool std::operator>(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)’
+  853 |     operator>(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/unique_ptr.h:853:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   couldn’t deduce template parameter ‘_Tp’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/memory:76,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:16:
+/usr/include/c++/11/bits/unique_ptr.h:862:5: note: candidate: ‘template<class _Tp, class _Dp> bool std::operator>(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)’
+  862 |     operator>(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/unique_ptr.h:862:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   ‘rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > >::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’} is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/bits/shared_ptr.h:53,
+                 from /usr/include/c++/11/memory:77,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:16:
+/usr/include/c++/11/bits/shared_ptr_base.h:1500:5: note: candidate: ‘template<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::operator>(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)’
+ 1500 |     operator>(const __shared_ptr<_Tp1, _Lp>& __a,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/shared_ptr_base.h:1500:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   couldn’t deduce template parameter ‘_Tp1’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/bits/shared_ptr.h:53,
+                 from /usr/include/c++/11/memory:77,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:16:
+/usr/include/c++/11/bits/shared_ptr_base.h:1506:5: note: candidate: ‘template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator>(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)’
+ 1506 |     operator>(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/shared_ptr_base.h:1506:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   couldn’t deduce template parameter ‘_Tp’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/bits/shared_ptr.h:53,
+                 from /usr/include/c++/11/memory:77,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:16:
+/usr/include/c++/11/bits/shared_ptr_base.h:1511:5: note: candidate: ‘template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator>(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)’
+ 1511 |     operator>(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/shared_ptr_base.h:1511:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:41: note:   cannot convert ‘make_shared<<expression error> >’ (type ‘<unresolved overloaded function type>’) to type ‘std::nullptr_t’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                    ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/memory:77,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:16:
+/usr/include/c++/11/bits/shared_ptr.h:535:5: note: candidate: ‘template<class _Tp, class _Up> bool std::operator>(const std::shared_ptr<_Tp>&, const std::shared_ptr<_Tp>&)’
+  535 |     operator>(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/shared_ptr.h:535:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   couldn’t deduce template parameter ‘_Tp’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/memory:77,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:16:
+/usr/include/c++/11/bits/shared_ptr.h:541:5: note: candidate: ‘template<class _Tp> bool std::operator>(const std::shared_ptr<_Tp>&, std::nullptr_t)’
+  541 |     operator>(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/shared_ptr.h:541:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   couldn’t deduce template parameter ‘_Tp’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/memory:77,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:16:
+/usr/include/c++/11/bits/shared_ptr.h:547:5: note: candidate: ‘template<class _Tp> bool std::operator>(std::nullptr_t, const std::shared_ptr<_Tp>&)’
+  547 |     operator>(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/shared_ptr.h:547:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:41: note:   cannot convert ‘make_shared<<expression error> >’ (type ‘<unresolved overloaded function type>’) to type ‘std::nullptr_t’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                    ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/bits/basic_string.h:48,
+                 from /usr/include/c++/11/string:55,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:17:
+/usr/include/c++/11/string_view:608:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr bool std::operator>(std::basic_string_view<_CharT, _Traits>, std::basic_string_view<_CharT, _Traits>)’
+  608 |     operator> (basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/string_view:608:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’ is not derived from ‘std::basic_string_view<_CharT, _Traits>’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/bits/basic_string.h:48,
+                 from /usr/include/c++/11/string:55,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:17:
+/usr/include/c++/11/string_view:614:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr bool std::operator>(std::basic_string_view<_CharT, _Traits>, std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >)’
+  614 |     operator> (basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/string_view:614:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   couldn’t deduce template parameter ‘_CharT’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/bits/basic_string.h:48,
+                 from /usr/include/c++/11/string:55,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:17:
+/usr/include/c++/11/string_view:621:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr bool std::operator>(std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >, std::basic_string_view<_CharT, _Traits>)’
+  621 |     operator> (__type_identity_t<basic_string_view<_CharT, _Traits>> __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/string_view:621:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’ is not derived from ‘std::basic_string_view<_CharT, _Traits>’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/string:55,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:17:
+/usr/include/c++/11/bits/basic_string.h:6378:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6378 |     operator>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:6378:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   ‘rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > >::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’} is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/string:55,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:17:
+/usr/include/c++/11/bits/basic_string.h:6391:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)’
+ 6391 |     operator>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:6391:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   mismatched types ‘const _CharT*’ and ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/string:55,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:17:
+/usr/include/c++/11/bits/basic_string.h:6403:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6403 |     operator>(const _CharT* __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:6403:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   ‘rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > >::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’} is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/set:61,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28,
+                 from /opt/ros/humble/include/controller_interface/controller_interface.hpp:22,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/include/ros2_unitree_legged_control/ros2_unitree_legged_control.hpp:20,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:21:
+/usr/include/c++/11/bits/stl_set.h:1037:5: note: candidate: ‘template<class _Key, class _Compare, class _Alloc> bool std::operator>(const std::set<_Key, _Compare, _Allocator>&, const std::set<_Key, _Compare, _Allocator>&)’
+ 1037 |     operator>(const set<_Key, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_set.h:1037:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   ‘rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > >::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’} is not derived from ‘const std::set<_Key, _Compare, _Allocator>’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/set:62,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28,
+                 from /opt/ros/humble/include/controller_interface/controller_interface.hpp:22,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/include/ros2_unitree_legged_control/ros2_unitree_legged_control.hpp:20,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:21:
+/usr/include/c++/11/bits/stl_multiset.h:1023:5: note: candidate: ‘template<class _Key, class _Compare, class _Alloc> bool std::operator>(const std::multiset<_Key, _Compare, _Allocator>&, const std::multiset<_Key, _Compare, _Allocator>&)’
+ 1023 |     operator>(const multiset<_Key,_Compare,_Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_multiset.h:1023:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   ‘rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > >::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’} is not derived from ‘const std::multiset<_Key, _Compare, _Allocator>’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/list:63,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:23,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28,
+                 from /opt/ros/humble/include/controller_interface/controller_interface.hpp:22,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/include/ros2_unitree_legged_control/ros2_unitree_legged_control.hpp:20,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:21:
+/usr/include/c++/11/bits/stl_list.h:2098:5: note: candidate: ‘template<class _Tp, class _Alloc> bool std::operator>(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)’
+ 2098 |     operator>(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_list.h:2098:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   ‘rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > >::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’} is not derived from ‘const std::__cxx11::list<_Tp, _Alloc>’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/map:61,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28,
+                 from /opt/ros/humble/include/controller_interface/controller_interface.hpp:22,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/include/ros2_unitree_legged_control/ros2_unitree_legged_control.hpp:20,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:21:
+/usr/include/c++/11/bits/stl_map.h:1515:5: note: candidate: ‘template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator>(const std::map<_Key, _Tp, _Compare, _Allocator>&, const std::map<_Key, _Tp, _Compare, _Allocator>&)’
+ 1515 |     operator>(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_map.h:1515:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   ‘rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > >::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’} is not derived from ‘const std::map<_Key, _Tp, _Compare, _Allocator>’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /usr/include/c++/11/map:62,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28,
+                 from /opt/ros/humble/include/controller_interface/controller_interface.hpp:22,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/include/ros2_unitree_legged_control/ros2_unitree_legged_control.hpp:20,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:21:
+/usr/include/c++/11/bits/stl_multimap.h:1180:5: note: candidate: ‘template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator>(const std::multimap<_Key, _Tp, _Compare, _Allocator>&, const std::multimap<_Key, _Tp, _Compare, _Allocator>&)’
+ 1180 |     operator>(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_multimap.h:1180:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   ‘rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > >::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’} is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Allocator>’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28,
+                 from /opt/ros/humble/include/controller_interface/controller_interface.hpp:22,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/include/ros2_unitree_legged_control/ros2_unitree_legged_control.hpp:20,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:21:
+/usr/include/c++/11/optional:1071:5: note: candidate: ‘template<class _Tp, class _Up> constexpr std::__optional_gt_t<_Tp, _Up> std::operator>(const std::optional<_Tp>&, const std::optional<_Up>&)’
+ 1071 |     operator>(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/11/optional:1071:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   ‘rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > >::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’} is not derived from ‘const std::optional<_Up>’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28,
+                 from /opt/ros/humble/include/controller_interface/controller_interface.hpp:22,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/include/ros2_unitree_legged_control/ros2_unitree_legged_control.hpp:20,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:21:
+/usr/include/c++/11/optional:1141:5: note: candidate: ‘template<class _Tp> constexpr bool std::operator>(const std::optional<_Tp>&, std::nullopt_t)’
+ 1141 |     operator>(const optional<_Tp>& __lhs, nullopt_t) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/11/optional:1141:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   couldn’t deduce template parameter ‘_Tp’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28,
+                 from /opt/ros/humble/include/controller_interface/controller_interface.hpp:22,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/include/ros2_unitree_legged_control/ros2_unitree_legged_control.hpp:20,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:21:
+/usr/include/c++/11/optional:1146:5: note: candidate: ‘template<class _Tp> constexpr bool std::operator>(std::nullopt_t, const std::optional<_Tp>&)’
+ 1146 |     operator>(nullopt_t, const optional<_Tp>& /* __rhs */) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/11/optional:1146:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   ‘rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > >::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’} is not derived from ‘const std::optional<_Tp>’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28,
+                 from /opt/ros/humble/include/controller_interface/controller_interface.hpp:22,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/include/ros2_unitree_legged_control/ros2_unitree_legged_control.hpp:20,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:21:
+/usr/include/c++/11/optional:1209:5: note: candidate: ‘template<class _Tp, class _Up> constexpr std::__optional_gt_t<_Tp, _Up> std::operator>(const std::optional<_Tp>&, const _Up&)’
+ 1209 |     operator>(const optional<_Tp>& __lhs, const _Up& __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/11/optional:1209:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   couldn’t deduce template parameter ‘_Tp’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28,
+                 from /opt/ros/humble/include/controller_interface/controller_interface.hpp:22,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/include/ros2_unitree_legged_control/ros2_unitree_legged_control.hpp:20,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:21:
+/usr/include/c++/11/optional:1215:5: note: candidate: ‘template<class _Tp, class _Up> constexpr std::__optional_gt_t<_Up, _Tp> std::operator>(const _Up&, const std::optional<_Tp>&)’
+ 1215 |     operator>(const _Up& __lhs, const optional<_Tp>& __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/11/optional:1215:5: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   ‘rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > >::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’} is not derived from ‘const std::optional<_Tp>’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28,
+                 from /opt/ros/humble/include/controller_interface/controller_interface.hpp:22,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/include/ros2_unitree_legged_control/ros2_unitree_legged_control.hpp:20,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:21:
+/usr/include/c++/11/variant:1235:3: note: candidate: ‘template<class ... _Types> constexpr bool std::operator>(const std::variant<_Types ...>&, const std::variant<_Types ...>&)’
+ 1235 |   _VARIANT_RELATION_FUNCTION_TEMPLATE(>, greater)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/variant:1235:3: note:   template argument deduction/substitution failed:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:138:115: note:   ‘rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > >::SharedPtr’ {aka ‘std::shared_ptr<rclcpp::Publisher<ros2_unitree_legged_msgs::msg::MotorState_<std::allocator<void> > > >’} is not derived from ‘const std::variant<_Types ...>’
+  138 |   rt_controller_state_publisher_ = std::make_shared<realtime_tools::RealtimePublisher<StateType>>(state_publisher_);
+      |                                                                                                                   ^
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28,
+                 from /opt/ros/humble/include/controller_interface/controller_interface.hpp:22,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/include/ros2_unitree_legged_control/ros2_unitree_legged_control.hpp:20,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:21:
+/usr/include/c++/11/thread:82:3: note: candidate: ‘bool std::operator>(std::thread::id, std::thread::id)’
+   82 |   operator>(thread::id __x, thread::id __y) noexcept
+      |   ^~~~~~~~
+/usr/include/c++/11/thread:82:24: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘std::thread::id’
+   82 |   operator>(thread::id __x, thread::id __y) noexcept
+      |             ~~~~~~~~~~~^~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28,
+                 from /opt/ros/humble/include/controller_interface/controller_interface.hpp:22,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/include/ros2_unitree_legged_control/ros2_unitree_legged_control.hpp:20,
+                 from /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:21:
+/usr/include/c++/11/variant:1273:18: note: candidate: ‘constexpr bool std::operator>(std::monostate, std::monostate)’
+ 1273 |   constexpr bool operator>(monostate, monostate) noexcept { return false; }
+      |                  ^~~~~~~~
+/usr/include/c++/11/variant:1273:28: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘std::monostate’
+ 1273 |   constexpr bool operator>(monostate, monostate) noexcept { return false; }
+      |                            ^~~~~~~~~
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:119:35: warning: unused parameter ‘previous_state’ [-Wunused-parameter]
+  119 |   const rclcpp_lifecycle::State & previous_state)
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp: In member function ‘virtual controller_interface::CallbackReturn ros2_unitree_legged_control::UnitreeLeggedController::on_activate(const rclcpp_lifecycle::State&)’:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:167:35: warning: unused parameter ‘previous_state’ [-Wunused-parameter]
+  167 |   const rclcpp_lifecycle::State & previous_state)
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp: In member function ‘virtual controller_interface::return_type ros2_unitree_legged_control::UnitreeLeggedController::update(const rclcpp::Time&, const rclcpp::Duration&)’:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:214:24: warning: unused parameter ‘time’ [-Wunused-parameter]
+  214 |   const rclcpp::Time & time, const rclcpp::Duration & period)
+      |   ~~~~~~~~~~~~~~~~~~~~~^~~~
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp: In member function ‘void ros2_unitree_legged_control::UnitreeLeggedController::publishState()’:
+/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:298:7: error: ‘rt_controller_state_publisher_’ was not declared in this scope
+  298 |   if (rt_controller_state_publisher_ && rt_controller_state_publisher_->trylock()) {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gmake[2]: *** [CMakeFiles/ros2_unitree_legged_control.dir/build.make:76：CMakeFiles/ros2_unitree_legged_control.dir/src/ros2_unitree_legged_control.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/ros2_unitree_legged_control.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2
+---
+Failed   <<< ros2_unitree_legged_control [3.77s, exited with code 2]
+
+Summary: 5 packages finished [4.26s]
+  1 package failed: ros2_unitree_legged_control
+  1 package had stderr output: ros2_unitree_legged_control

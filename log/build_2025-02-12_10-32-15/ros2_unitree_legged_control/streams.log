@@ -1,0 +1,94 @@
+[0.007s] Invoking command in '/home/syx/ros2_ws/build/ros2_unitree_legged_control': CMAKE_PREFIX_PATH=/home/syx/ros2_ws/install/ros2_unitree_legged_msgs:/home/syx/ros2_ws/install/unitree_guide2:/home/syx/ros2_ws/install/ros2_unitree_legged_control:/home/syx/ros2_ws/install/go1_gazebo:/home/syx/ros2_ws/install/go1_description:/home/syx/ros2_ws/install/go1_navigation:/opt/ros/humble LD_LIBRARY_PATH=/home/syx/ros2_ws/install/ros2_unitree_legged_msgs/lib:/home/syx/ros2_ws/install/ros2_unitree_legged_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/syx/ros2_ws/src/ros2_unitree_legged_controller -DCMAKE_INSTALL_PREFIX=/home/syx/ros2_ws/install/ros2_unitree_legged_control
+[0.052s] -- The CXX compiler identification is GNU 11.4.0
+[0.056s] -- Detecting CXX compiler ABI info
+[0.111s] -- Detecting CXX compiler ABI info - done
+[0.117s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.117s] -- Detecting CXX compile features
+[0.117s] -- Detecting CXX compile features - done
+[0.119s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.222s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.293s] -- Found ros2_unitree_legged_msgs: 0.4.0 (/home/syx/ros2_ws/install/ros2_unitree_legged_msgs/share/ros2_unitree_legged_msgs/cmake)
+[0.316s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.319s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.325s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.334s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.344s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.352s] -- Found control_toolbox: 3.4.0 (/opt/ros/humble/share/control_toolbox/cmake)
+[0.471s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.472s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.487s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.493s] -- Looking for C++ include pthread.h
+[0.564s] -- Looking for C++ include pthread.h - found
+[0.564s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.638s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.639s] -- Found Threads: TRUE  
+[0.682s] -- Found parameter_traits: 0.3.9 (/opt/ros/humble/share/parameter_traits/cmake)
+[0.694s] -- Found rclcpp_lifecycle: 16.0.11 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[0.726s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[0.734s] -- Found controller_interface: 2.46.0 (/opt/ros/humble/share/controller_interface/cmake)
+[0.799s] -- Configuring done
+[0.817s] -- Generating done
+[0.820s] -- Build files have been written to: /home/syx/ros2_ws/build/ros2_unitree_legged_control
+[0.826s] Invoked command in '/home/syx/ros2_ws/build/ros2_unitree_legged_control' returned '0': CMAKE_PREFIX_PATH=/home/syx/ros2_ws/install/ros2_unitree_legged_msgs:/home/syx/ros2_ws/install/unitree_guide2:/home/syx/ros2_ws/install/ros2_unitree_legged_control:/home/syx/ros2_ws/install/go1_gazebo:/home/syx/ros2_ws/install/go1_description:/home/syx/ros2_ws/install/go1_navigation:/opt/ros/humble LD_LIBRARY_PATH=/home/syx/ros2_ws/install/ros2_unitree_legged_msgs/lib:/home/syx/ros2_ws/install/ros2_unitree_legged_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/syx/ros2_ws/src/ros2_unitree_legged_controller -DCMAKE_INSTALL_PREFIX=/home/syx/ros2_ws/install/ros2_unitree_legged_control
+[0.827s] Invoking command in '/home/syx/ros2_ws/build/ros2_unitree_legged_control': CMAKE_PREFIX_PATH=/home/syx/ros2_ws/install/ros2_unitree_legged_msgs:/home/syx/ros2_ws/install/unitree_guide2:/home/syx/ros2_ws/install/ros2_unitree_legged_control:/home/syx/ros2_ws/install/go1_gazebo:/home/syx/ros2_ws/install/go1_description:/home/syx/ros2_ws/install/go1_navigation:/opt/ros/humble LD_LIBRARY_PATH=/home/syx/ros2_ws/install/ros2_unitree_legged_msgs/lib:/home/syx/ros2_ws/install/ros2_unitree_legged_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/syx/ros2_ws/build/ros2_unitree_legged_control -- -j8 -l8
+[0.860s] [ 33%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /home/syx/ros2_ws/build/ros2_unitree_legged_control/ros2_unitree_legged_control_parameters/include//ros2_unitree_legged_control_parameters.hpp /home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.yaml `[0m
+[1.037s] [ 33%] Built target ros2_unitree_legged_control_parameters
+[1.051s] [ 66%] [32mBuilding CXX object CMakeFiles/ros2_unitree_legged_control.dir/src/ros2_unitree_legged_control.cpp.o[0m
+[4.765s] In file included from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+[4.765s]                  from [01m[K/home/syx/ros2_ws/src/ros2_unitree_legged_controller/include/ros2_unitree_legged_control/ros2_unitree_legged_control.hpp:32[m[K,
+[4.766s]                  from [01m[K/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:21[m[K:
+[4.766s] [01m[K/opt/ros/humble/include/realtime_tools/realtime_tools/realtime_buffer.h:22:100:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: This header include is deprecated. Please update your code to use 'realtime_buffer.hpp' header.[m[K’
+[4.766s]    22 | ude is deprecated. Please update your code to use 'realtime_buffer.hpp' header."[01;36m[K)[m[K  //NOLINT
+[4.766s]       |                                                                                 [01;36m[K^[m[K
+[4.766s] 
+[5.299s] [01m[K/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::CallbackReturn ros2_unitree_legged_control::UnitreeLeggedController::on_configure(const rclcpp_lifecycle::State&)[m[K’:
+[5.299s] [01m[K/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:119:35:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.300s]   119 |   [01;35m[Kconst rclcpp_lifecycle::State & previous_state[m[K)
+[5.300s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[5.302s] [01m[K/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::CallbackReturn ros2_unitree_legged_control::UnitreeLeggedController::on_activate(const rclcpp_lifecycle::State&)[m[K’:
+[5.302s] [01m[K/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:167:35:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.302s]   167 |   [01;35m[Kconst rclcpp_lifecycle::State & previous_state[m[K)
+[5.302s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[5.303s] [01m[K/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type ros2_unitree_legged_control::UnitreeLeggedController::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[5.303s] [01m[K/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:214:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.303s]   214 |   [01;35m[Kconst rclcpp::Time & time[m[K, const rclcpp::Duration & period)
+[5.303s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[13.986s] [100%] [32m[1mLinking CXX shared library libros2_unitree_legged_control.so[0m
+[15.077s] [100%] Built target ros2_unitree_legged_control
+[15.112s] Invoked command in '/home/syx/ros2_ws/build/ros2_unitree_legged_control' returned '0': CMAKE_PREFIX_PATH=/home/syx/ros2_ws/install/ros2_unitree_legged_msgs:/home/syx/ros2_ws/install/unitree_guide2:/home/syx/ros2_ws/install/ros2_unitree_legged_control:/home/syx/ros2_ws/install/go1_gazebo:/home/syx/ros2_ws/install/go1_description:/home/syx/ros2_ws/install/go1_navigation:/opt/ros/humble LD_LIBRARY_PATH=/home/syx/ros2_ws/install/ros2_unitree_legged_msgs/lib:/home/syx/ros2_ws/install/ros2_unitree_legged_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/syx/ros2_ws/build/ros2_unitree_legged_control -- -j8 -l8
+[15.113s] Invoking command in '/home/syx/ros2_ws/build/ros2_unitree_legged_control': CMAKE_PREFIX_PATH=/home/syx/ros2_ws/install/ros2_unitree_legged_msgs:/home/syx/ros2_ws/install/unitree_guide2:/home/syx/ros2_ws/install/ros2_unitree_legged_control:/home/syx/ros2_ws/install/go1_gazebo:/home/syx/ros2_ws/install/go1_description:/home/syx/ros2_ws/install/go1_navigation:/opt/ros/humble LD_LIBRARY_PATH=/home/syx/ros2_ws/install/ros2_unitree_legged_msgs/lib:/home/syx/ros2_ws/install/ros2_unitree_legged_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/syx/ros2_ws/build/ros2_unitree_legged_control
+[15.131s] -- Install configuration: ""
+[15.131s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/include/ros2_unitree_legged_control_parameters
+[15.131s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/include/ros2_unitree_legged_control_parameters/ros2_unitree_legged_control_parameters.hpp
+[15.131s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/share/ros2_unitree_legged_control/ros2_unitree_legged_control.xml
+[15.131s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/include/ros2_unitree_legged_control
+[15.132s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/include/ros2_unitree_legged_control/ros2_unitree_legged_control
+[15.132s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/include/ros2_unitree_legged_control/ros2_unitree_legged_control/ros2_unitree_legged_control.hpp
+[15.132s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/include/ros2_unitree_legged_control/ros2_unitree_legged_control/visibility_control.h
+[15.132s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/include/ros2_unitree_legged_control/ros2_unitree_legged_control/unitree_joint_control_tool.h
+[15.132s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/lib/ros2_unitree_legged_control/libros2_unitree_legged_control.so
+[15.138s] -- Set runtime path of "/home/syx/ros2_ws/install/ros2_unitree_legged_control/lib/ros2_unitree_legged_control/libros2_unitree_legged_control.so" to "/home/syx/ros2_ws/install/ros2_unitree_legged_control/lib"
+[15.138s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/share/ros2_unitree_legged_control/environment/library_path.sh
+[15.138s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/share/ros2_unitree_legged_control/environment/library_path.dsv
+[15.139s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/share/ament_index/resource_index/package_run_dependencies/ros2_unitree_legged_control
+[15.139s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/share/ament_index/resource_index/parent_prefix_path/ros2_unitree_legged_control
+[15.139s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/share/ros2_unitree_legged_control/environment/ament_prefix_path.sh
+[15.139s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/share/ros2_unitree_legged_control/environment/ament_prefix_path.dsv
+[15.144s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/share/ros2_unitree_legged_control/environment/path.sh
+[15.144s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/share/ros2_unitree_legged_control/environment/path.dsv
+[15.144s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/share/ros2_unitree_legged_control/local_setup.bash
+[15.146s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/share/ros2_unitree_legged_control/local_setup.sh
+[15.146s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/share/ros2_unitree_legged_control/local_setup.zsh
+[15.146s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/share/ros2_unitree_legged_control/local_setup.dsv
+[15.146s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/share/ros2_unitree_legged_control/package.dsv
+[15.146s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/share/ament_index/resource_index/packages/ros2_unitree_legged_control
+[15.147s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/share/ament_index/resource_index/controller_interface__pluginlib__plugin/ros2_unitree_legged_control
+[15.147s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/share/ros2_unitree_legged_control/cmake/ros2_unitree_legged_controlExport.cmake
+[15.147s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/share/ros2_unitree_legged_control/cmake/ros2_unitree_legged_controlExport-noconfig.cmake
+[15.147s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/share/ros2_unitree_legged_control/cmake/ament_cmake_export_libraries-extras.cmake
+[15.147s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/share/ros2_unitree_legged_control/cmake/ament_cmake_export_targets-extras.cmake
+[15.147s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/share/ros2_unitree_legged_control/cmake/ament_cmake_export_dependencies-extras.cmake
+[15.147s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/share/ros2_unitree_legged_control/cmake/ros2_unitree_legged_controlConfig.cmake
+[15.147s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/share/ros2_unitree_legged_control/cmake/ros2_unitree_legged_controlConfig-version.cmake
+[15.147s] -- Installing: /home/syx/ros2_ws/install/ros2_unitree_legged_control/share/ros2_unitree_legged_control/package.xml
+[15.154s] Invoked command in '/home/syx/ros2_ws/build/ros2_unitree_legged_control' returned '0': CMAKE_PREFIX_PATH=/home/syx/ros2_ws/install/ros2_unitree_legged_msgs:/home/syx/ros2_ws/install/unitree_guide2:/home/syx/ros2_ws/install/ros2_unitree_legged_control:/home/syx/ros2_ws/install/go1_gazebo:/home/syx/ros2_ws/install/go1_description:/home/syx/ros2_ws/install/go1_navigation:/opt/ros/humble LD_LIBRARY_PATH=/home/syx/ros2_ws/install/ros2_unitree_legged_msgs/lib:/home/syx/ros2_ws/install/ros2_unitree_legged_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/syx/ros2_ws/build/ros2_unitree_legged_control

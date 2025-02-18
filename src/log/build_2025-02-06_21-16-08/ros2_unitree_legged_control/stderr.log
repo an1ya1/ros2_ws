@@ -1,0 +1,19 @@
+In file included from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/syx/ros2_ws/src/ros2_unitree_legged_controller/include/ros2_unitree_legged_control/ros2_unitree_legged_control.hpp:32[m[K,
+                 from [01m[K/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:21[m[K:
+[01m[K/opt/ros/humble/include/realtime_tools/realtime_tools/realtime_buffer.h:22:100:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: This header include is deprecated. Please update your code to use 'realtime_buffer.hpp' header.[m[K’
+   22 | lease update your code to use 'realtime_buffer.hpp' header."[01;36m[K)[m[K  //NOLINT
+      |                                                             [01;36m[K^[m[K
+
+[01m[K/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::CallbackReturn ros2_unitree_legged_control::UnitreeLeggedController::on_configure(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:119:35:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  119 |   [01;35m[Kconst rclcpp_lifecycle::State & previous_state[m[K)
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::CallbackReturn ros2_unitree_legged_control::UnitreeLeggedController::on_activate(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:167:35:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  167 |   [01;35m[Kconst rclcpp_lifecycle::State & previous_state[m[K)
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type ros2_unitree_legged_control::UnitreeLeggedController::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/syx/ros2_ws/src/ros2_unitree_legged_controller/src/ros2_unitree_legged_control.cpp:214:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  214 |   [01;35m[Kconst rclcpp::Time & time[m[K, const rclcpp::Duration & period)
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K

@@ -1,0 +1,1182 @@
+[0.006s] Invoking command in '/home/syx/ros2_ws/build/unitree_guide2': CMAKE_PREFIX_PATH=/home/syx/ros2_ws/install/ros2_unitree_legged_msgs:/home/syx/ros2_ws/install/unitree_guide2:/home/syx/ros2_ws/install/ros2_unitree_legged_control:/home/syx/ros2_ws/install/go1_gazebo:/home/syx/ros2_ws/install/go1_description:/home/syx/ros2_ws/install/go1_navigation:/opt/ros/humble LD_LIBRARY_PATH=/home/syx/ros2_ws/install/ros2_unitree_legged_msgs/lib:/home/syx/ros2_ws/install/ros2_unitree_legged_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/syx/ros2_ws/src/unitree_guide2 -DCMAKE_INSTALL_PREFIX=/home/syx/ros2_ws/install/unitree_guide2
+[0.043s] -- The C compiler identification is GNU 11.4.0
+[0.083s] -- The CXX compiler identification is GNU 11.4.0
+[0.087s] -- Detecting C compiler ABI info
+[0.134s] -- Detecting C compiler ABI info - done
+[0.142s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.142s] -- Detecting C compile features
+[0.142s] -- Detecting C compile features - done
+[0.144s] -- Detecting CXX compiler ABI info
+[0.198s] -- Detecting CXX compiler ABI info - done
+[0.203s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.203s] -- Detecting CXX compile features
+[0.204s] -- Detecting CXX compile features - done
+[0.205s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.305s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.365s] -- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)
+[0.366s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.421s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0")  
+[0.423s] -- Found controller_manager: 2.46.0 (/opt/ros/humble/share/controller_manager/cmake)
+[0.454s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.457s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.463s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.471s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.482s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.618s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.620s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.634s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.640s] -- Looking for pthread.h
+[0.686s] -- Looking for pthread.h - found
+[0.686s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.733s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.734s] -- Found Threads: TRUE  
+[0.792s] -- Found joint_trajectory_controller: 2.39.0 (/opt/ros/humble/share/joint_trajectory_controller/cmake)
+[0.804s] -- Found parameter_traits: 0.3.9 (/opt/ros/humble/share/parameter_traits/cmake)
+[0.828s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[0.835s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.836s] -- Checking for module 'bullet>=2.82'
+[0.844s] --   Found bullet, version 3.05
+[0.908s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[0.943s] -- Found assimp: /usr/include (found version "5.2.0") 
+[0.966s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.995s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.010s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.014s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.018s] -- Searching for dependencies of ignition-math6
+[1.019s] -- Looking for OGRE...
+[1.019s] -- OGRE_PREFIX_WATCH changed.
+[1.023s] -- Checking for module 'OGRE'
+[1.032s] --   Found OGRE, version 1.9.0
+[1.051s] -- Found Ogre Ghadamon (1.9.0)
+[1.058s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.064s] -- Looking for OGRE_Paging...
+[1.068s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.068s] -- Looking for OGRE_Terrain...
+[1.072s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.072s] -- Looking for OGRE_Property...
+[1.075s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.075s] -- Looking for OGRE_RTShaderSystem...
+[1.078s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.078s] -- Looking for OGRE_Volume...
+[1.082s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.082s] -- Looking for OGRE_Overlay...
+[1.084s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.153s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.155s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.155s] -- Searching for dependencies of ignition-transport8
+[1.167s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.174s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.178s] -- Checking for module 'libzmq >= 4'
+[1.186s] --   Found libzmq , version 4.3.4
+[1.210s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[1.213s] -- Checking for module 'uuid'
+[1.221s] --   Found uuid, version 2.37.2
+[1.241s] -- Found UUID: TRUE  
+[1.243s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.243s] -- Searching for dependencies of ignition-msgs5
+[1.256s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.259s] -- Checking for module 'tinyxml2'
+[1.267s] --   Found tinyxml2, version 9.0.0
+[1.289s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.290s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.291s] -- Searching for dependencies of ignition-common3
+[1.291s] -- Looking for dlfcn.h - found
+[1.291s] -- Looking for libdl - found
+[1.293s] -- Found DL: TRUE  
+[1.301s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[1.302s] -- Searching for <ignition-common3> component [graphics]
+[1.303s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.303s] -- Searching for dependencies of ignition-common3-graphics
+[1.304s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.306s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.306s] -- Searching for dependencies of ignition-fuel_tools4
+[1.356s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[1.362s] -- Checking for module 'jsoncpp'
+[1.371s] --   Found jsoncpp, version 1.9.5
+[1.392s] -- Found JSONCPP: TRUE  
+[1.396s] -- Checking for module 'libzip'
+[1.405s] --   Found libzip, version 1.7.3
+[1.426s] -- Found ZIP: TRUE  
+[1.427s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.427s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.427s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.430s] -- Gazebo version: 11.14
+[1.430s] -- Checking for module 'tbb'
+[1.443s] --   Found tbb, version 2021.5.0
+[1.466s] -- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)
+[1.473s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.474s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.474s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.524s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.537s] -- Found ros2_unitree_legged_msgs: 0.4.0 (/home/syx/ros2_ws/install/ros2_unitree_legged_msgs/share/ros2_unitree_legged_msgs/cmake)
+[1.548s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.548s] -- Configured cppcheck include dirs: /home/syx/ros2_ws/src/unitree_guide2/include
+[1.548s] -- Configured cppcheck exclude dirs and/or files: 
+[1.549s] -- Added test 'lint_cmake' to check CMake code style
+[1.551s] -- Added test 'uncrustify' to check C / C++ code style
+[1.551s] -- Configured uncrustify additional arguments: 
+[1.552s] -- Added test 'xmllint' to check XML markup files
+[1.553s] -- Configuring done
+[1.564s] -- Generating done
+[1.568s] -- Build files have been written to: /home/syx/ros2_ws/build/unitree_guide2
+[1.578s] Invoked command in '/home/syx/ros2_ws/build/unitree_guide2' returned '0': CMAKE_PREFIX_PATH=/home/syx/ros2_ws/install/ros2_unitree_legged_msgs:/home/syx/ros2_ws/install/unitree_guide2:/home/syx/ros2_ws/install/ros2_unitree_legged_control:/home/syx/ros2_ws/install/go1_gazebo:/home/syx/ros2_ws/install/go1_description:/home/syx/ros2_ws/install/go1_navigation:/opt/ros/humble LD_LIBRARY_PATH=/home/syx/ros2_ws/install/ros2_unitree_legged_msgs/lib:/home/syx/ros2_ws/install/ros2_unitree_legged_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/syx/ros2_ws/src/unitree_guide2 -DCMAKE_INSTALL_PREFIX=/home/syx/ros2_ws/install/unitree_guide2
+[1.579s] Invoking command in '/home/syx/ros2_ws/build/unitree_guide2': CMAKE_PREFIX_PATH=/home/syx/ros2_ws/install/ros2_unitree_legged_msgs:/home/syx/ros2_ws/install/unitree_guide2:/home/syx/ros2_ws/install/ros2_unitree_legged_control:/home/syx/ros2_ws/install/go1_gazebo:/home/syx/ros2_ws/install/go1_description:/home/syx/ros2_ws/install/go1_navigation:/opt/ros/humble LD_LIBRARY_PATH=/home/syx/ros2_ws/install/ros2_unitree_legged_msgs/lib:/home/syx/ros2_ws/install/ros2_unitree_legged_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/syx/ros2_ws/build/unitree_guide2 -- -j8 -l8
+[1.622s] [ 11%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/FSM/State_Passive.cpp.o[0m
+[1.622s] [ 11%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/FSM/State_FixedStand.cpp.o[0m
+[1.622s] [ 11%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/FSM/State_BalanceTest.cpp.o[0m
+[1.622s] [ 14%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/FSM/State_FreeStand.cpp.o[0m
+[1.622s] [ 22%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/FSM/FSM.cpp.o[0m
+[1.622s] [ 22%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/main.cpp.o[0m
+[1.622s] [ 25%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/FSM/FSMState.cpp.o[0m
+[1.625s] [ 29%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/FSM/State_StepTest.cpp.o[0m
+[3.553s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[3.553s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[3.554s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[3.554s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:8[m[K,
+[3.554s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/FSM.cpp:4[m[K:
+[3.554s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:[m[K In constructor ‘[01m[KAvgCov::AvgCov(unsigned int, std::string, bool, unsigned int, unsigned int, double)[m[K’:
+[3.554s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:278:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KAvgCov::_valueName[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.554s]   278 |     std::string [01;35m[K_valueName[m[K;
+[3.554s]       |                 [01;35m[K^~~~~~~~~~[m[K
+[3.554s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[3.554s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[3.554s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[3.554s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_FixedStand.h:7[m[K,
+[3.554s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_FixedStand.cpp:5[m[K:
+[3.554s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:[m[K In constructor ‘[01m[KAvgCov::AvgCov(unsigned int, std::string, bool, unsigned int, unsigned int, double)[m[K’:
+[3.554s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:278:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KAvgCov::_valueName[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.554s]   278 |     std::string [01;35m[K_valueName[m[K;
+[3.554s]       |                 [01;35m[K^~~~~~~~~~[m[K
+[3.555s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:272:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool AvgCov::_avgOnly[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.555s]   272 |     bool [01;35m[K_avgOnly[m[K;
+[3.555s]       |          [01;35m[K^~~~~~~~[m[K
+[3.555s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:272:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool AvgCov::_avgOnly[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.555s]   272 |     bool [01;35m[K_avgOnly[m[K;
+[3.555s]       |          [01;35m[K^~~~~~~~[m[K
+[3.555s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[3.555s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[3.555s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[3.555s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:8[m[K,
+[3.555s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/FSM.cpp:4[m[K:
+[3.555s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:246:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.555s]   246 |     [01;35m[KAvgCov[m[K(unsigned int size, std::string name, bool avgOnly=false, unsigned int showPeriod=1000, unsigned int waitCount=5000, double zoomFactor=10000)
+[3.555s]       |     [01;35m[K^~~~~~[m[K
+[3.555s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[3.555s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[3.555s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[3.556s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_FixedStand.h:7[m[K,
+[3.556s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_FixedStand.cpp:5[m[K:
+[3.556s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:246:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.556s]   246 |     [01;35m[KAvgCov[m[K(unsigned int size, std::string name, bool avgOnly=false, unsigned int showPeriod=1000, unsigned int waitCount=5000, double zoomFactor=10000)
+[3.556s]       |     [01;35m[K^~~~~~[m[K
+[3.592s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[3.592s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[3.592s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[3.592s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_BalanceTest.h:7[m[K,
+[3.592s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_BalanceTest.cpp:4[m[K:
+[3.592s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:[m[K In constructor ‘[01m[KAvgCov::AvgCov(unsigned int, std::string, bool, unsigned int, unsigned int, double)[m[K’:
+[3.592s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:278:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KAvgCov::_valueName[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.592s]   278 |     std::string [01;35m[K_valueName[m[K;
+[3.593s]       |                 [01;35m[K^~~~~~~~~~[m[K
+[3.593s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:272:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool AvgCov::_avgOnly[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.593s]   272 |     bool [01;35m[K_avgOnly[m[K;
+[3.593s]       |          [01;35m[K^~~~~~~~[m[K
+[3.593s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[3.593s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[3.593s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[3.593s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_BalanceTest.h:7[m[K,
+[3.594s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_BalanceTest.cpp:4[m[K:
+[3.594s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:246:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.594s]   246 |     [01;35m[KAvgCov[m[K(unsigned int size, std::string name, bool avgOnly=false, unsigned int showPeriod=1000, unsigned int waitCount=5000, double zoomFactor=10000)
+[3.594s]       |     [01;35m[K^~~~~~[m[K
+[3.607s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[3.607s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[3.607s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[3.607s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_StepTest.h:7[m[K,
+[3.607s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_StepTest.cpp:4[m[K:
+[3.608s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:[m[K In constructor ‘[01m[KAvgCov::AvgCov(unsigned int, std::string, bool, unsigned int, unsigned int, double)[m[K’:
+[3.608s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:278:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KAvgCov::_valueName[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.608s]   278 |     std::string [01;35m[K_valueName[m[K;
+[3.608s]       |                 [01;35m[K^~~~~~~~~~[m[K
+[3.608s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:272:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool AvgCov::_avgOnly[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.608s]   272 |     bool [01;35m[K_avgOnly[m[K;
+[3.608s]       |          [01;35m[K^~~~~~~~[m[K
+[3.608s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[3.608s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[3.608s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[3.608s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_StepTest.h:7[m[K,
+[3.608s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_StepTest.cpp:4[m[K:
+[3.608s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:246:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.608s]   246 |     [01;35m[KAvgCov[m[K(unsigned int size, std::string name, bool avgOnly=false, unsigned int showPeriod=1000, unsigned int waitCount=5000, double zoomFactor=10000)
+[3.608s]       |     [01;35m[K^~~~~~[m[K
+[3.616s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelState.h:10[m[K,
+[3.617s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:8[m[K,
+[3.617s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[3.617s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_FixedStand.h:7[m[K,
+[3.617s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_FixedStand.cpp:5[m[K:
+[3.617s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:[m[K In member function ‘[01m[Kvirtual void* CmdPanel::run(void*)[m[K’:
+[3.617s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:50:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.617s]    50 |     virtual void* run([01;35m[Kvoid *arg[m[K){return NULL;}
+[3.617s]       |                       [01;35m[K~~~~~~^~~[m[K
+[3.620s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[3.620s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[3.620s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[3.620s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/FSMState.cpp:4[m[K:
+[3.620s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:[m[K In constructor ‘[01m[KAvgCov::AvgCov(unsigned int, std::string, bool, unsigned int, unsigned int, double)[m[K’:
+[3.620s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:278:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KAvgCov::_valueName[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.620s]   278 |     std::string [01;35m[K_valueName[m[K;
+[3.620s]       |                 [01;35m[K^~~~~~~~~~[m[K
+[3.620s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:272:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool AvgCov::_avgOnly[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.620s]   272 |     bool [01;35m[K_avgOnly[m[K;
+[3.620s]       |          [01;35m[K^~~~~~~~[m[K
+[3.620s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[3.621s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[3.621s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[3.621s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/FSMState.cpp:4[m[K:
+[3.621s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:246:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.621s]   246 |     [01;35m[KAvgCov[m[K(unsigned int size, std::string name, bool avgOnly=false, unsigned int showPeriod=1000, unsigned int waitCount=5000, double zoomFactor=10000)
+[3.621s]       |     [01;35m[K^~~~~~[m[K
+[3.636s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[3.636s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[3.636s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[3.636s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_FreeStand.h:7[m[K,
+[3.636s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_FreeStand.cpp:4[m[K:
+[3.636s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:[m[K In constructor ‘[01m[KAvgCov::AvgCov(unsigned int, std::string, bool, unsigned int, unsigned int, double)[m[K’:
+[3.636s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:278:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KAvgCov::_valueName[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.636s]   278 |     std::string [01;35m[K_valueName[m[K;
+[3.636s]       |                 [01;35m[K^~~~~~~~~~[m[K
+[3.636s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:272:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool AvgCov::_avgOnly[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.636s]   272 |     bool [01;35m[K_avgOnly[m[K;
+[3.636s]       |          [01;35m[K^~~~~~~~[m[K
+[3.637s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[3.637s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[3.637s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[3.637s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_FreeStand.h:7[m[K,
+[3.637s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_FreeStand.cpp:4[m[K:
+[3.637s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:246:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.637s]   246 |     [01;35m[KAvgCov[m[K(unsigned int size, std::string name, bool avgOnly=false, unsigned int showPeriod=1000, unsigned int waitCount=5000, double zoomFactor=10000)
+[3.637s]       |     [01;35m[K^~~~~~[m[K
+[3.656s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelState.h:10[m[K,
+[3.656s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:8[m[K,
+[3.656s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[3.656s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:8[m[K,
+[3.656s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/FSM.cpp:4[m[K:
+[3.656s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:[m[K In member function ‘[01m[Kvirtual void* CmdPanel::run(void*)[m[K’:
+[3.657s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:50:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.657s]    50 |     virtual void* run([01;35m[Kvoid *arg[m[K){return NULL;}
+[3.657s]       |                       [01;35m[K~~~~~~^~~[m[K
+[3.661s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelState.h:10[m[K,
+[3.661s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:8[m[K,
+[3.661s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[3.661s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_BalanceTest.h:7[m[K,
+[3.661s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_BalanceTest.cpp:4[m[K:
+[3.661s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:[m[K In member function ‘[01m[Kvirtual void* CmdPanel::run(void*)[m[K’:
+[3.661s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:50:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.661s]    50 |     virtual void* run([01;35m[Kvoid *arg[m[K){return NULL;}
+[3.662s]       |                       [01;35m[K~~~~~~^~~[m[K
+[3.672s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelState.h:10[m[K,
+[3.672s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:8[m[K,
+[3.672s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[3.672s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_StepTest.h:7[m[K,
+[3.672s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_StepTest.cpp:4[m[K:
+[3.672s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:[m[K In member function ‘[01m[Kvirtual void* CmdPanel::run(void*)[m[K’:
+[3.672s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:50:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.672s]    50 |     virtual void* run([01;35m[Kvoid *arg[m[K){return NULL;}
+[3.672s]       |                       [01;35m[K~~~~~~^~~[m[K
+[3.688s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelState.h:10[m[K,
+[3.688s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:8[m[K,
+[3.688s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[3.688s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/FSMState.cpp:4[m[K:
+[3.688s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:[m[K In member function ‘[01m[Kvirtual void* CmdPanel::run(void*)[m[K’:
+[3.688s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:50:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.688s]    50 |     virtual void* run([01;35m[Kvoid *arg[m[K){return NULL;}
+[3.689s]       |                       [01;35m[K~~~~~~^~~[m[K
+[3.696s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[3.696s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[3.696s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[3.696s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:8[m[K,
+[3.696s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/ControlFrame.h:7[m[K,
+[3.696s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/main.cpp:9[m[K:
+[3.697s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:[m[K In constructor ‘[01m[KAvgCov::AvgCov(unsigned int, std::string, bool, unsigned int, unsigned int, double)[m[K’:
+[3.697s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:278:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KAvgCov::_valueName[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.697s]   278 |     std::string [01;35m[K_valueName[m[K;
+[3.697s]       |                 [01;35m[K^~~~~~~~~~[m[K
+[3.697s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:272:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool AvgCov::_avgOnly[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.697s]   272 |     bool [01;35m[K_avgOnly[m[K;
+[3.698s]       |          [01;35m[K^~~~~~~~[m[K
+[3.698s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[3.698s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[3.698s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[3.698s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:8[m[K,
+[3.698s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/ControlFrame.h:7[m[K,
+[3.699s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/main.cpp:9[m[K:
+[3.699s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:246:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.699s]   246 |     [01;35m[KAvgCov[m[K(unsigned int size, std::string name, bool avgOnly=false, unsigned int showPeriod=1000, unsigned int waitCount=5000, double zoomFactor=10000)
+[3.699s]       |     [01;35m[K^~~~~~[m[K
+[3.773s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelState.h:10[m[K,
+[3.773s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:8[m[K,
+[3.773s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[3.773s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_FreeStand.h:7[m[K,
+[3.773s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_FreeStand.cpp:4[m[K:
+[3.773s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:[m[K In member function ‘[01m[Kvirtual void* CmdPanel::run(void*)[m[K’:
+[3.774s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:50:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.774s]    50 |     virtual void* run([01;35m[Kvoid *arg[m[K){return NULL;}
+[3.774s]       |                       [01;35m[K~~~~~~^~~[m[K
+[3.801s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelState.h:10[m[K,
+[3.801s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:8[m[K,
+[3.801s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[3.801s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:8[m[K,
+[3.801s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/ControlFrame.h:7[m[K,
+[3.801s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/main.cpp:9[m[K:
+[3.801s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:[m[K In member function ‘[01m[Kvirtual void* CmdPanel::run(void*)[m[K’:
+[3.801s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:50:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.801s]    50 |     virtual void* run([01;35m[Kvoid *arg[m[K){return NULL;}
+[3.801s]       |                       [01;35m[K~~~~~~^~~[m[K
+[3.858s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[3.858s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[3.858s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[3.859s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_Passive.h:7[m[K,
+[3.859s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_Passive.cpp:4[m[K:
+[3.859s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:[m[K In constructor ‘[01m[KAvgCov::AvgCov(unsigned int, std::string, bool, unsigned int, unsigned int, double)[m[K’:
+[3.859s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:278:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KAvgCov::_valueName[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.859s]   278 |     std::string [01;35m[K_valueName[m[K;
+[3.859s]       |                 [01;35m[K^~~~~~~~~~[m[K
+[3.859s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:272:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool AvgCov::_avgOnly[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.859s]   272 |     bool [01;35m[K_avgOnly[m[K;
+[3.859s]       |          [01;35m[K^~~~~~~~[m[K
+[3.859s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[3.859s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[3.859s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[3.859s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_Passive.h:7[m[K,
+[3.859s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_Passive.cpp:4[m[K:
+[3.859s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:246:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.859s]   246 |     [01;35m[KAvgCov[m[K(unsigned int size, std::string name, bool avgOnly=false, unsigned int showPeriod=1000, unsigned int waitCount=5000, double zoomFactor=10000)
+[3.859s]       |     [01;35m[K^~~~~~[m[K
+[3.989s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelState.h:10[m[K,
+[3.989s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:8[m[K,
+[3.989s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[3.989s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_Passive.h:7[m[K,
+[3.989s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_Passive.cpp:4[m[K:
+[3.989s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:[m[K In member function ‘[01m[Kvirtual void* CmdPanel::run(void*)[m[K’:
+[3.990s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:50:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.990s]    50 |     virtual void* run([01;35m[Kvoid *arg[m[K){return NULL;}
+[3.990s]       |                       [01;35m[K~~~~~~^~~[m[K
+[6.387s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[6.387s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_BalanceTest.h:7[m[K,
+[6.387s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_BalanceTest.cpp:4[m[K:
+[6.387s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:[m[K In destructor ‘[01m[KCtrlComponents::~CtrlComponents()[m[K’:
+[6.387s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:35:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of abstract class type ‘[01m[KIOInterface[m[K’ which has non-virtual destructor will cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[6.387s]    35 |         [01;35m[Kdelete ioInter[m[K;
+[6.387s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[6.732s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[6.732s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:8[m[K,
+[6.732s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/FSM.cpp:4[m[K:
+[6.732s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:[m[K In destructor ‘[01m[KCtrlComponents::~CtrlComponents()[m[K’:
+[6.732s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:35:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of abstract class type ‘[01m[KIOInterface[m[K’ which has non-virtual destructor will cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[6.733s]    35 |         [01;35m[Kdelete ioInter[m[K;
+[6.733s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[6.795s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/FSM.cpp:4[m[K:
+[6.795s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:[m[K In member function ‘[01m[Kvoid FSMStateList::deletePtr()[m[K’:
+[6.795s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:44:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of abstract class type ‘[01m[KFSMState[m[K’ which has non-virtual destructor will cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[6.795s]    44 |         [01;35m[Kdelete invalid[m[K;
+[6.795s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[6.795s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:45:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KState_Passive[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[6.796s]    45 |         [01;35m[Kdelete passive[m[K;
+[6.796s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[6.796s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:46:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KState_FixedStand[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[6.796s]    46 |         [01;35m[Kdelete fixedStand[m[K;
+[6.796s]       |         [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[6.796s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:47:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KState_FreeStand[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[6.797s]    47 |         [01;35m[Kdelete freeStand[m[K;
+[6.797s]       |         [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[6.797s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:48:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KState_Trotting[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[6.797s]    48 |         [01;35m[Kdelete trotting[m[K;
+[6.797s]       |         [01;35m[K^~~~~~~~~~~~~~~[m[K
+[6.801s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:49:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KState_BalanceTest[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[6.801s]    49 |         [01;35m[Kdelete balanceTest[m[K;
+[6.801s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[6.801s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:50:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KState_SwingTest[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[6.801s]    50 |         [01;35m[Kdelete swingTest[m[K;
+[6.801s]       |         [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[6.802s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:51:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KState_StepTest[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[6.802s]    51 |         [01;35m[Kdelete stepTest[m[K;
+[6.802s]       |         [01;35m[K^~~~~~~~~~~~~~~[m[K
+[6.802s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:56:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KState_move_base[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[6.802s]    56 |         [01;35m[Kdelete moveBase[m[K;
+[6.802s]       |         [01;35m[K^~~~~~~~~~~~~~~[m[K
+[6.966s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[6.966s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/FSMState.cpp:4[m[K:
+[6.966s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:[m[K In destructor ‘[01m[KCtrlComponents::~CtrlComponents()[m[K’:
+[6.966s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:35:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of abstract class type ‘[01m[KIOInterface[m[K’ which has non-virtual destructor will cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[6.966s]    35 |         [01;35m[Kdelete ioInter[m[K;
+[6.967s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[6.968s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/FSMState.cpp:4[m[K:
+[6.968s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:[m[K In constructor ‘[01m[KFSMState::FSMState(CtrlComponents*, FSMStateName, std::string)[m[K’:
+[6.968s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:31:21:[m[K [01;35m[Kwarning: [m[K‘[01m[KFSMState::_ctrlComp[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[6.968s]    31 |     CtrlComponents *[01;35m[K_ctrlComp[m[K;
+[6.968s]       |                     [01;35m[K^~~~~~~~~[m[K
+[6.969s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:28:18:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KFSMStateName FSMState::_stateName[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[6.969s]    28 |     FSMStateName [01;35m[K_stateName[m[K;
+[6.969s]       |                  [01;35m[K^~~~~~~~~~[m[K
+[6.972s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/FSMState.cpp:6:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[6.972s]     6 | [01;35m[KFSMState[m[K::FSMState(CtrlComponents *ctrlComp, FSMStateName stateName, std::string stateNameString)
+[6.972s]       | [01;35m[K^~~~~~~~[m[K
+[7.025s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[7.025s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:8[m[K,
+[7.025s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/ControlFrame.h:7[m[K,
+[7.025s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/main.cpp:9[m[K:
+[7.025s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:[m[K In destructor ‘[01m[KCtrlComponents::~CtrlComponents()[m[K’:
+[7.026s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:35:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of abstract class type ‘[01m[KIOInterface[m[K’ which has non-virtual destructor will cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[7.026s]    35 |         [01;35m[Kdelete ioInter[m[K;
+[7.026s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[7.087s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/ControlFrame.h:7[m[K,
+[7.087s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/main.cpp:9[m[K:
+[7.087s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:[m[K In member function ‘[01m[Kvoid FSMStateList::deletePtr()[m[K’:
+[7.087s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:44:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of abstract class type ‘[01m[KFSMState[m[K’ which has non-virtual destructor will cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[7.088s]    44 |         [01;35m[Kdelete invalid[m[K;
+[7.088s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[7.088s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:45:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KState_Passive[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[7.088s]    45 |         [01;35m[Kdelete passive[m[K;
+[7.088s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[7.088s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:46:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KState_FixedStand[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[7.088s]    46 |         [01;35m[Kdelete fixedStand[m[K;
+[7.088s]       |         [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[7.088s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:47:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KState_FreeStand[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[7.088s]    47 |         [01;35m[Kdelete freeStand[m[K;
+[7.088s]       |         [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[7.088s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:48:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KState_Trotting[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[7.088s]    48 |         [01;35m[Kdelete trotting[m[K;
+[7.088s]       |         [01;35m[K^~~~~~~~~~~~~~~[m[K
+[7.088s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:49:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KState_BalanceTest[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[7.088s]    49 |         [01;35m[Kdelete balanceTest[m[K;
+[7.089s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[7.089s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:50:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KState_SwingTest[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[7.089s]    50 |         [01;35m[Kdelete swingTest[m[K;
+[7.089s]       |         [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[7.089s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:51:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KState_StepTest[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[7.089s]    51 |         [01;35m[Kdelete stepTest[m[K;
+[7.089s]       |         [01;35m[K^~~~~~~~~~~~~~~[m[K
+[7.089s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:56:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KState_move_base[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[7.089s]    56 |         [01;35m[Kdelete moveBase[m[K;
+[7.089s]       |         [01;35m[K^~~~~~~~~~~~~~~[m[K
+[7.124s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[7.125s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_StepTest.h:7[m[K,
+[7.125s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_StepTest.cpp:4[m[K:
+[7.125s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:[m[K In destructor ‘[01m[KCtrlComponents::~CtrlComponents()[m[K’:
+[7.125s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:35:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of abstract class type ‘[01m[KIOInterface[m[K’ which has non-virtual destructor will cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[7.125s]    35 |         [01;35m[Kdelete ioInter[m[K;
+[7.125s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[7.125s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[7.125s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_FreeStand.h:7[m[K,
+[7.125s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_FreeStand.cpp:4[m[K:
+[7.125s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:[m[K In destructor ‘[01m[KCtrlComponents::~CtrlComponents()[m[K’:
+[7.126s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:35:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of abstract class type ‘[01m[KIOInterface[m[K’ which has non-virtual destructor will cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[7.126s]    35 |         [01;35m[Kdelete ioInter[m[K;
+[7.126s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[7.158s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[7.158s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_FixedStand.h:7[m[K,
+[7.158s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_FixedStand.cpp:5[m[K:
+[7.158s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:[m[K In destructor ‘[01m[KCtrlComponents::~CtrlComponents()[m[K’:
+[7.158s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:35:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of abstract class type ‘[01m[KIOInterface[m[K’ which has non-virtual destructor will cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[7.159s]    35 |         [01;35m[Kdelete ioInter[m[K;
+[7.159s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[7.427s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[7.427s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_Passive.h:7[m[K,
+[7.428s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_Passive.cpp:4[m[K:
+[7.428s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:[m[K In destructor ‘[01m[KCtrlComponents::~CtrlComponents()[m[K’:
+[7.428s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:35:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of abstract class type ‘[01m[KIOInterface[m[K’ which has non-virtual destructor will cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[7.428s]    35 |         [01;35m[Kdelete ioInter[m[K;
+[7.428s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[7.448s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/main.cpp:[m[K In function ‘[01m[Kvoid ShutDown(int)[m[K’:
+[7.448s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/main.cpp:31:19:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksig[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.448s]    31 | void ShutDown([01;35m[Kint sig[m[K)
+[7.448s]       |               [01;35m[K~~~~^~~[m[K
+[8.678s] [ 33%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/FSM/State_SwingTest.cpp.o[0m
+[8.804s] [ 37%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/FSM/State_Trotting.cpp.o[0m
+[8.994s] [ 40%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/FSM/State_move_base.cpp.o[0m
+[9.218s] [ 44%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/Gait/FeetEndCal.cpp.o[0m
+[9.218s] [ 48%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/Gait/GaitGenerator.cpp.o[0m
+[9.309s] [ 51%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/Gait/WaveGenerator.cpp.o[0m
+[9.383s] [ 55%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/common/LowPassFilter.cpp.o[0m
+[9.643s] [ 59%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/common/unitreeLeg.cpp.o[0m
+[10.037s] [ 62%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/common/unitreeRobot.cpp.o[0m
+[10.757s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[10.758s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[10.758s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[10.758s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_Trotting.h:7[m[K,
+[10.758s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_Trotting.cpp:4[m[K:
+[10.758s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:[m[K In constructor ‘[01m[KAvgCov::AvgCov(unsigned int, std::string, bool, unsigned int, unsigned int, double)[m[K’:
+[10.758s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:278:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KAvgCov::_valueName[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.758s]   278 |     std::string [01;35m[K_valueName[m[K;
+[10.758s]       |                 [01;35m[K^~~~~~~~~~[m[K
+[10.758s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:272:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool AvgCov::_avgOnly[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.758s]   272 |     bool [01;35m[K_avgOnly[m[K;
+[10.758s]       |          [01;35m[K^~~~~~~~[m[K
+[10.758s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[10.758s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[10.758s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[10.759s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_Trotting.h:7[m[K,
+[10.759s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_Trotting.cpp:4[m[K:
+[10.759s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:246:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.759s]   246 |     [01;35m[KAvgCov[m[K(unsigned int size, std::string name, bool avgOnly=false, unsigned int showPeriod=1000, unsigned int waitCount=5000, double zoomFactor=10000)
+[10.759s]       |     [01;35m[K^~~~~~[m[K
+[10.824s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelState.h:10[m[K,
+[10.824s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:8[m[K,
+[10.824s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[10.824s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_Trotting.h:7[m[K,
+[10.824s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_Trotting.cpp:4[m[K:
+[10.824s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:[m[K In member function ‘[01m[Kvirtual void* CmdPanel::run(void*)[m[K’:
+[10.825s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:50:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.825s]    50 |     virtual void* run([01;35m[Kvoid *arg[m[K){return NULL;}
+[10.825s]       |                       [01;35m[K~~~~~~^~~[m[K
+[10.995s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[10.995s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[10.995s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[10.995s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_Trotting.h:7[m[K,
+[10.995s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_move_base.h:37[m[K,
+[10.995s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_move_base.cpp:47[m[K:
+[10.995s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:[m[K In constructor ‘[01m[KAvgCov::AvgCov(unsigned int, std::string, bool, unsigned int, unsigned int, double)[m[K’:
+[10.995s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:278:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KAvgCov::_valueName[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.995s]   278 |     std::string [01;35m[K_valueName[m[K;
+[10.995s]       |                 [01;35m[K^~~~~~~~~~[m[K
+[10.995s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:272:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool AvgCov::_avgOnly[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.996s]   272 |     bool [01;35m[K_avgOnly[m[K;
+[10.996s]       |          [01;35m[K^~~~~~~~[m[K
+[10.996s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[10.996s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[10.996s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[10.996s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_Trotting.h:7[m[K,
+[10.996s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_move_base.h:37[m[K,
+[10.996s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_move_base.cpp:47[m[K:
+[10.996s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:246:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[10.996s]   246 |     [01;35m[KAvgCov[m[K(unsigned int size, std::string name, bool avgOnly=false, unsigned int showPeriod=1000, unsigned int waitCount=5000, double zoomFactor=10000)
+[10.996s]       |     [01;35m[K^~~~~~[m[K
+[11.031s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[11.031s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[11.031s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[11.031s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_SwingTest.h:7[m[K,
+[11.032s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_SwingTest.cpp:4[m[K:
+[11.032s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:[m[K In constructor ‘[01m[KAvgCov::AvgCov(unsigned int, std::string, bool, unsigned int, unsigned int, double)[m[K’:
+[11.032s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:278:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KAvgCov::_valueName[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[11.032s]   278 |     std::string [01;35m[K_valueName[m[K;
+[11.032s]       |                 [01;35m[K^~~~~~~~~~[m[K
+[11.032s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:272:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool AvgCov::_avgOnly[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[11.032s]   272 |     bool [01;35m[K_avgOnly[m[K;
+[11.032s]       |          [01;35m[K^~~~~~~~[m[K
+[11.032s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[11.032s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[11.032s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[11.032s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_SwingTest.h:7[m[K,
+[11.032s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_SwingTest.cpp:4[m[K:
+[11.032s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:246:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[11.032s]   246 |     [01;35m[KAvgCov[m[K(unsigned int size, std::string name, bool avgOnly=false, unsigned int showPeriod=1000, unsigned int waitCount=5000, double zoomFactor=10000)
+[11.032s]       |     [01;35m[K^~~~~~[m[K
+[11.060s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelState.h:10[m[K,
+[11.060s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:8[m[K,
+[11.060s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[11.060s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_Trotting.h:7[m[K,
+[11.060s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_move_base.h:37[m[K,
+[11.060s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_move_base.cpp:47[m[K:
+[11.060s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:[m[K In member function ‘[01m[Kvirtual void* CmdPanel::run(void*)[m[K’:
+[11.060s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:50:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.060s]    50 |     virtual void* run([01;35m[Kvoid *arg[m[K){return NULL;}
+[11.060s]       |                       [01;35m[K~~~~~~^~~[m[K
+[11.083s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[11.083s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[11.083s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/Gait/FeetEndCal.h:7[m[K,
+[11.083s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/Gait/FeetEndCal.cpp:4[m[K:
+[11.083s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:[m[K In constructor ‘[01m[KAvgCov::AvgCov(unsigned int, std::string, bool, unsigned int, unsigned int, double)[m[K’:
+[11.083s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:278:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KAvgCov::_valueName[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[11.083s]   278 |     std::string [01;35m[K_valueName[m[K;
+[11.083s]       |                 [01;35m[K^~~~~~~~~~[m[K
+[11.083s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:272:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool AvgCov::_avgOnly[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[11.084s]   272 |     bool [01;35m[K_avgOnly[m[K;
+[11.084s]       |          [01;35m[K^~~~~~~~[m[K
+[11.084s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[11.084s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[11.084s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/Gait/FeetEndCal.h:7[m[K,
+[11.084s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/Gait/FeetEndCal.cpp:4[m[K:
+[11.084s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:246:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[11.084s]   246 |     [01;35m[KAvgCov[m[K(unsigned int size, std::string name, bool avgOnly=false, unsigned int showPeriod=1000, unsigned int waitCount=5000, double zoomFactor=10000)
+[11.084s]       |     [01;35m[K^~~~~~[m[K
+[11.121s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelState.h:10[m[K,
+[11.121s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:8[m[K,
+[11.121s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[11.121s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_SwingTest.h:7[m[K,
+[11.121s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_SwingTest.cpp:4[m[K:
+[11.121s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:[m[K In member function ‘[01m[Kvirtual void* CmdPanel::run(void*)[m[K’:
+[11.122s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:50:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.122s]    50 |     virtual void* run([01;35m[Kvoid *arg[m[K){return NULL;}
+[11.122s]       |                       [01;35m[K~~~~~~^~~[m[K
+[11.143s] [ 66%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/control/BalanceCtrl.cpp.o[0m
+[11.150s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelState.h:10[m[K,
+[11.150s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:8[m[K,
+[11.150s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/Gait/FeetEndCal.h:7[m[K,
+[11.150s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/Gait/FeetEndCal.cpp:4[m[K:
+[11.150s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:[m[K In member function ‘[01m[Kvirtual void* CmdPanel::run(void*)[m[K’:
+[11.150s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:50:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.150s]    50 |     virtual void* run([01;35m[Kvoid *arg[m[K){return NULL;}
+[11.150s]       |                       [01;35m[K~~~~~~^~~[m[K
+[11.369s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[11.369s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[11.369s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/Gait/FeetEndCal.h:7[m[K,
+[11.369s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/Gait/GaitGenerator.h:8[m[K,
+[11.369s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/Gait/GaitGenerator.cpp:4[m[K:
+[11.369s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:[m[K In constructor ‘[01m[KAvgCov::AvgCov(unsigned int, std::string, bool, unsigned int, unsigned int, double)[m[K’:
+[11.369s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:278:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KAvgCov::_valueName[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[11.369s]   278 |     std::string [01;35m[K_valueName[m[K;
+[11.370s]       |                 [01;35m[K^~~~~~~~~~[m[K
+[11.371s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:272:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool AvgCov::_avgOnly[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[11.371s]   272 |     bool [01;35m[K_avgOnly[m[K;
+[11.371s]       |          [01;35m[K^~~~~~~~[m[K
+[11.371s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[11.371s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[11.371s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/Gait/FeetEndCal.h:7[m[K,
+[11.372s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/Gait/GaitGenerator.h:8[m[K,
+[11.372s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/Gait/GaitGenerator.cpp:4[m[K:
+[11.372s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:246:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[11.372s]   246 |     [01;35m[KAvgCov[m[K(unsigned int size, std::string name, bool avgOnly=false, unsigned int showPeriod=1000, unsigned int waitCount=5000, double zoomFactor=10000)
+[11.372s]       |     [01;35m[K^~~~~~[m[K
+[11.432s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelState.h:10[m[K,
+[11.432s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:8[m[K,
+[11.432s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/Gait/FeetEndCal.h:7[m[K,
+[11.432s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/Gait/GaitGenerator.h:8[m[K,
+[11.433s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/Gait/GaitGenerator.cpp:4[m[K:
+[11.433s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:[m[K In member function ‘[01m[Kvirtual void* CmdPanel::run(void*)[m[K’:
+[11.433s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:50:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.433s]    50 |     virtual void* run([01;35m[Kvoid *arg[m[K){return NULL;}
+[11.433s]       |                       [01;35m[K~~~~~~^~~[m[K
+[11.847s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelState.h:9[m[K,
+[11.848s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/unitreeRobot.h:8[m[K,
+[11.848s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/common/unitreeRobot.cpp:4[m[K:
+[11.848s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:[m[K In constructor ‘[01m[KAvgCov::AvgCov(unsigned int, std::string, bool, unsigned int, unsigned int, double)[m[K’:
+[11.848s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:278:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KAvgCov::_valueName[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[11.848s]   278 |     std::string [01;35m[K_valueName[m[K;
+[11.848s]       |                 [01;35m[K^~~~~~~~~~[m[K
+[11.848s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:272:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool AvgCov::_avgOnly[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[11.848s]   272 |     bool [01;35m[K_avgOnly[m[K;
+[11.848s]       |          [01;35m[K^~~~~~~~[m[K
+[11.848s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelState.h:9[m[K,
+[11.848s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/unitreeRobot.h:8[m[K,
+[11.848s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/common/unitreeRobot.cpp:4[m[K:
+[11.848s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:246:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[11.848s]   246 |     [01;35m[KAvgCov[m[K(unsigned int size, std::string name, bool avgOnly=false, unsigned int showPeriod=1000, unsigned int waitCount=5000, double zoomFactor=10000)
+[11.848s]       |     [01;35m[K^~~~~~[m[K
+[11.953s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelState.h:10[m[K,
+[11.953s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/unitreeRobot.h:8[m[K,
+[11.953s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/common/unitreeRobot.cpp:4[m[K:
+[11.953s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:[m[K In member function ‘[01m[Kvirtual void* CmdPanel::run(void*)[m[K’:
+[11.953s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:50:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.953s]    50 |     virtual void* run([01;35m[Kvoid *arg[m[K){return NULL;}
+[11.953s]       |                       [01;35m[K~~~~~~^~~[m[K
+[12.391s] [ 70%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/control/ControlFrame.cpp.o[0m
+[13.043s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelState.h:9[m[K,
+[13.043s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/unitreeRobot.h:8[m[K,
+[13.043s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/BalanceCtrl.h:9[m[K,
+[13.043s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/BalanceCtrl.cpp:4[m[K:
+[13.044s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:[m[K In constructor ‘[01m[KAvgCov::AvgCov(unsigned int, std::string, bool, unsigned int, unsigned int, double)[m[K’:
+[13.044s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:278:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KAvgCov::_valueName[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[13.044s]   278 |     std::string [01;35m[K_valueName[m[K;
+[13.044s]       |                 [01;35m[K^~~~~~~~~~[m[K
+[13.044s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:272:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool AvgCov::_avgOnly[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[13.044s]   272 |     bool [01;35m[K_avgOnly[m[K;
+[13.044s]       |          [01;35m[K^~~~~~~~[m[K
+[13.044s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelState.h:9[m[K,
+[13.044s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/unitreeRobot.h:8[m[K,
+[13.044s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/BalanceCtrl.h:9[m[K,
+[13.044s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/BalanceCtrl.cpp:4[m[K:
+[13.044s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:246:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[13.044s]   246 |     [01;35m[KAvgCov[m[K(unsigned int size, std::string name, bool avgOnly=false, unsigned int showPeriod=1000, unsigned int waitCount=5000, double zoomFactor=10000)
+[13.044s]       |     [01;35m[K^~~~~~[m[K
+[13.102s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelState.h:10[m[K,
+[13.102s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/unitreeRobot.h:8[m[K,
+[13.102s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/BalanceCtrl.h:9[m[K,
+[13.102s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/BalanceCtrl.cpp:4[m[K:
+[13.102s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:[m[K In member function ‘[01m[Kvirtual void* CmdPanel::run(void*)[m[K’:
+[13.102s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:50:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[13.102s]    50 |     virtual void* run([01;35m[Kvoid *arg[m[K){return NULL;}
+[13.102s]       |                       [01;35m[K~~~~~~^~~[m[K
+[13.203s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/BalanceCtrl.cpp:4[m[K:
+[13.203s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/BalanceCtrl.h:[m[K In constructor ‘[01m[KBalanceCtrl::BalanceCtrl(double, Mat3, Mat6, double, double)[m[K’:
+[13.203s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/BalanceCtrl.h:36:12:[m[K [01;35m[Kwarning: [m[K‘[01m[KBalanceCtrl::_mass[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[13.203s]    36 |     double [01;35m[K_mass[m[K, _alpha, _beta, _fricRatio;
+[13.203s]       |            [01;35m[K^~~~~[m[K
+[13.203s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/BalanceCtrl.h:31:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KMat3 BalanceCtrl::_Ib[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[13.203s]    31 |     Mat3 [01;35m[K_Ib[m[K;
+[13.203s]       |          [01;35m[K^~~[m[K
+[13.203s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/BalanceCtrl.cpp:8:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[13.203s]     8 | [01;35m[KBalanceCtrl[m[K::BalanceCtrl(double mass, Mat3 Ib, Mat6 S, double alpha, double beta)
+[13.203s]       | [01;35m[K^~~~~~~~~~~[m[K
+[13.203s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/BalanceCtrl.cpp:4[m[K:
+[13.203s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/BalanceCtrl.h:31:10:[m[K [01;35m[Kwarning: [m[K‘[01m[KBalanceCtrl::_Ib[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[13.203s]    31 |     Mat3 [01;35m[K_Ib[m[K;
+[13.204s]       |          [01;35m[K^~~[m[K
+[13.204s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/BalanceCtrl.h:30:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KMat6 BalanceCtrl::_S[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[13.204s]    30 |     Mat6 [01;35m[K_S[m[K;
+[13.204s]       |          [01;35m[K^~[m[K
+[13.204s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/BalanceCtrl.cpp:8:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[13.204s]     8 | [01;35m[KBalanceCtrl[m[K::BalanceCtrl(double mass, Mat3 Ib, Mat6 S, double alpha, double beta)
+[13.204s]       | [01;35m[K^~~~~~~~~~~[m[K
+[13.493s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/BalanceCtrl.cpp:[m[K In member function ‘[01m[Kvoid BalanceCtrl::calMatrixA(Vec34, RotMat, VecInt4)[m[K’:
+[13.493s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/BalanceCtrl.cpp:63:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcontact[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[13.493s]    63 | void BalanceCtrl::calMatrixA(Vec34 feetPos2B, RotMat rotM, [01;35m[KVecInt4 contact[m[K){
+[13.493s]       |                                                            [01;35m[K~~~~~~~~^~~~~~~[m[K
+[13.636s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/BalanceCtrl.cpp:[m[K In member function ‘[01m[Kvoid BalanceCtrl::solveQP()[m[K’:
+[13.636s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/BalanceCtrl.cpp:149:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvalue[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[13.636s]   149 |     double [01;35m[Kvalue[m[K = solve_quadprog(G, g0, CE, ce0, CI, ci0, x);
+[13.637s]       |            [01;35m[K^~~~~[m[K
+[14.054s] [ 74%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/control/Estimator.cpp.o[0m
+[14.291s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[14.291s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_Trotting.h:7[m[K,
+[14.291s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_Trotting.cpp:4[m[K:
+[14.291s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:[m[K In destructor ‘[01m[KCtrlComponents::~CtrlComponents()[m[K’:
+[14.292s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:35:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of abstract class type ‘[01m[KIOInterface[m[K’ which has non-virtual destructor will cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[14.292s]    35 |         [01;35m[Kdelete ioInter[m[K;
+[14.292s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[14.296s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_Trotting.cpp:4[m[K:
+[14.296s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_Trotting.h:[m[K In constructor ‘[01m[KState_Trotting::State_Trotting(CtrlComponents*)[m[K’:
+[14.296s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_Trotting.h:63:14:[m[K [01;35m[Kwarning: [m[K‘[01m[KState_Trotting::_contact[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[14.296s]    63 |     VecInt4 *[01;35m[K_contact[m[K;
+[14.296s]       |              [01;35m[K^~~~~~~~[m[K
+[14.296s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_Trotting.h:30:21:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KQuadrupedRobot* State_Trotting::_robModel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[14.297s]    30 |     QuadrupedRobot *[01;35m[K_robModel[m[K;
+[14.297s]       |                     [01;35m[K^~~~~~~~~[m[K
+[14.297s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_Trotting.cpp:7:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[14.297s]     7 | [01;35m[KState_Trotting[m[K::State_Trotting(CtrlComponents *ctrlComp)
+[14.297s]       | [01;35m[K^~~~~~~~~~~~~~[m[K
+[14.300s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[14.300s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_SwingTest.h:7[m[K,
+[14.300s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_SwingTest.cpp:4[m[K:
+[14.301s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:[m[K In destructor ‘[01m[KCtrlComponents::~CtrlComponents()[m[K’:
+[14.301s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:35:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of abstract class type ‘[01m[KIOInterface[m[K’ which has non-virtual destructor will cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[14.301s]    35 |         [01;35m[Kdelete ioInter[m[K;
+[14.301s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[14.341s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/Gait/FeetEndCal.h:7[m[K,
+[14.342s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/Gait/FeetEndCal.cpp:4[m[K:
+[14.342s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:[m[K In destructor ‘[01m[KCtrlComponents::~CtrlComponents()[m[K’:
+[14.342s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:35:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of abstract class type ‘[01m[KIOInterface[m[K’ which has non-virtual destructor will cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[14.342s]    35 |         [01;35m[Kdelete ioInter[m[K;
+[14.342s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[14.345s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/Gait/FeetEndCal.cpp:4[m[K:
+[14.346s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/Gait/FeetEndCal.h:[m[K In constructor ‘[01m[KFeetEndCal::FeetEndCal(CtrlComponents*)[m[K’:
+[14.346s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/Gait/FeetEndCal.h:17:16:[m[K [01;35m[Kwarning: [m[K‘[01m[KFeetEndCal::_est[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[14.346s]    17 |     Estimator *[01;35m[K_est[m[K;
+[14.346s]       |                [01;35m[K^~~~[m[K
+[14.346s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/Gait/FeetEndCal.h:16:20:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KLowlevelState* FeetEndCal::_lowState[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[14.346s]    16 |     LowlevelState *[01;35m[K_lowState[m[K;
+[14.346s]       |                    [01;35m[K^~~~~~~~~[m[K
+[14.346s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/Gait/FeetEndCal.cpp:6:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[14.346s]     6 | [01;35m[KFeetEndCal[m[K::FeetEndCal(CtrlComponents *ctrlComp)
+[14.346s]       | [01;35m[K^~~~~~~~~~[m[K
+[14.398s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/Gait/FeetEndCal.h:7[m[K,
+[14.398s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/Gait/GaitGenerator.h:8[m[K,
+[14.398s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/Gait/GaitGenerator.cpp:4[m[K:
+[14.399s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:[m[K In destructor ‘[01m[KCtrlComponents::~CtrlComponents()[m[K’:
+[14.399s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:35:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of abstract class type ‘[01m[KIOInterface[m[K’ which has non-virtual destructor will cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[14.399s]    35 |         [01;35m[Kdelete ioInter[m[K;
+[14.399s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[14.400s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[14.400s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_Trotting.h:7[m[K,
+[14.400s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/State_move_base.h:37[m[K,
+[14.400s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/FSM/State_move_base.cpp:47[m[K:
+[14.400s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:[m[K In destructor ‘[01m[KCtrlComponents::~CtrlComponents()[m[K’:
+[14.400s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:35:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of abstract class type ‘[01m[KIOInterface[m[K’ which has non-virtual destructor will cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[14.400s]    35 |         [01;35m[Kdelete ioInter[m[K;
+[14.400s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[14.403s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/Gait/GaitGenerator.cpp:4[m[K:
+[14.403s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/Gait/GaitGenerator.h:[m[K In constructor ‘[01m[KGaitGenerator::GaitGenerator(CtrlComponents*)[m[K’:
+[14.403s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/Gait/GaitGenerator.h:39:14:[m[K [01;35m[Kwarning: [m[K‘[01m[KGaitGenerator::_contact[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[14.403s]    39 |     VecInt4 *[01;35m[K_contact[m[K;
+[14.403s]       |              [01;35m[K^~~~~~~~[m[K
+[14.403s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/Gait/GaitGenerator.h:33:21:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KQuadrupedRobot* GaitGenerator::_robModel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[14.403s]    33 |     QuadrupedRobot *[01;35m[K_robModel[m[K;
+[14.403s]       |                     [01;35m[K^~~~~~~~~[m[K
+[14.403s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/Gait/GaitGenerator.cpp:6:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[14.403s]     6 | [01;35m[KGaitGenerator[m[K::GaitGenerator(CtrlComponents *ctrlComp)
+[14.403s]       | [01;35m[K^~~~~~~~~~~~~[m[K
+[14.429s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[14.429s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[14.429s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[14.429s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:8[m[K,
+[14.429s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/ControlFrame.h:7[m[K,
+[14.430s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/ControlFrame.cpp:4[m[K:
+[14.430s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:[m[K In constructor ‘[01m[KAvgCov::AvgCov(unsigned int, std::string, bool, unsigned int, unsigned int, double)[m[K’:
+[14.430s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:278:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KAvgCov::_valueName[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[14.430s]   278 |     std::string [01;35m[K_valueName[m[K;
+[14.430s]       |                 [01;35m[K^~~~~~~~~~[m[K
+[14.430s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:272:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool AvgCov::_avgOnly[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[14.430s]   272 |     bool [01;35m[K_avgOnly[m[K;
+[14.430s]       |          [01;35m[K^~~~~~~~[m[K
+[14.430s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[14.430s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:7[m[K,
+[14.430s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[14.430s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:8[m[K,
+[14.430s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/ControlFrame.h:7[m[K,
+[14.430s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/ControlFrame.cpp:4[m[K:
+[14.430s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:246:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[14.430s]   246 |     [01;35m[KAvgCov[m[K(unsigned int size, std::string name, bool avgOnly=false, unsigned int showPeriod=1000, unsigned int waitCount=5000, double zoomFactor=10000)
+[14.431s]       |     [01;35m[K^~~~~~[m[K
+[14.490s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelState.h:10[m[K,
+[14.490s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:8[m[K,
+[14.491s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[14.491s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:8[m[K,
+[14.491s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/ControlFrame.h:7[m[K,
+[14.491s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/ControlFrame.cpp:4[m[K:
+[14.491s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:[m[K In member function ‘[01m[Kvirtual void* CmdPanel::run(void*)[m[K’:
+[14.491s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:50:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[14.491s]    50 |     virtual void* run([01;35m[Kvoid *arg[m[K){return NULL;}
+[14.491s]       |                       [01;35m[K~~~~~~^~~[m[K
+[15.988s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelState.h:9[m[K,
+[15.992s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/unitreeRobot.h:8[m[K,
+[15.992s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/Estimator.h:8[m[K,
+[15.992s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/Estimator.cpp:4[m[K:
+[15.992s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:[m[K In constructor ‘[01m[KAvgCov::AvgCov(unsigned int, std::string, bool, unsigned int, unsigned int, double)[m[K’:
+[15.993s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:278:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KAvgCov::_valueName[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[15.993s]   278 |     std::string [01;35m[K_valueName[m[K;
+[15.993s]       |                 [01;35m[K^~~~~~~~~~[m[K
+[15.993s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:272:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool AvgCov::_avgOnly[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[15.993s]   272 |     bool [01;35m[K_avgOnly[m[K;
+[15.993s]       |          [01;35m[K^~~~~~~~[m[K
+[15.993s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelState.h:9[m[K,
+[15.993s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/unitreeRobot.h:8[m[K,
+[15.993s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/Estimator.h:8[m[K,
+[15.993s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/Estimator.cpp:4[m[K:
+[15.993s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:246:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[15.993s]   246 |     [01;35m[KAvgCov[m[K(unsigned int size, std::string name, bool avgOnly=false, unsigned int showPeriod=1000, unsigned int waitCount=5000, double zoomFactor=10000)
+[15.993s]       |     [01;35m[K^~~~~~[m[K
+[16.048s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelState.h:10[m[K,
+[16.048s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/unitreeRobot.h:8[m[K,
+[16.049s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/Estimator.h:8[m[K,
+[16.049s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/Estimator.cpp:4[m[K:
+[16.049s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:[m[K In member function ‘[01m[Kvirtual void* CmdPanel::run(void*)[m[K’:
+[16.049s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:50:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[16.049s]    50 |     virtual void* run([01;35m[Kvoid *arg[m[K){return NULL;}
+[16.049s]       |                       [01;35m[K~~~~~~^~~[m[K
+[16.182s] [ 77%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/interface/IOROS.cpp.o[0m
+[16.238s] [ 81%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/interface/IOSDK.cpp.o[0m
+[16.262s] [ 85%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/interface/KeyBoard.cpp.o[0m
+[16.664s] [ 88%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/interface/WirelessHandle.cpp.o[0m
+[16.686s] [ 92%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/quadProgpp/Array.cc.o[0m
+[16.769s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/KeyBoard.h:14[m[K,
+[16.769s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/interface/KeyBoard.cpp:4[m[K:
+[16.769s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:[m[K In member function ‘[01m[Kvirtual void* CmdPanel::run(void*)[m[K’:
+[16.769s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:50:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[16.770s]    50 |     virtual void* run([01;35m[Kvoid *arg[m[K){return NULL;}
+[16.770s]       |                       [01;35m[K~~~~~~^~~[m[K
+[17.400s] [ 96%] [32mBuilding CXX object CMakeFiles/junior_ctrl.dir/src/quadProgpp/QuadProg++.cc.o[0m
+[17.458s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSMState.h:10[m[K,
+[17.458s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:8[m[K,
+[17.458s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/ControlFrame.h:7[m[K,
+[17.458s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/ControlFrame.cpp:4[m[K:
+[17.458s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:[m[K In destructor ‘[01m[KCtrlComponents::~CtrlComponents()[m[K’:
+[17.459s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/CtrlComponents.h:35:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of abstract class type ‘[01m[KIOInterface[m[K’ which has non-virtual destructor will cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[17.459s]    35 |         [01;35m[Kdelete ioInter[m[K;
+[17.459s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[17.513s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/ControlFrame.h:7[m[K,
+[17.513s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/ControlFrame.cpp:4[m[K:
+[17.513s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:[m[K In member function ‘[01m[Kvoid FSMStateList::deletePtr()[m[K’:
+[17.513s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:44:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of abstract class type ‘[01m[KFSMState[m[K’ which has non-virtual destructor will cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[17.513s]    44 |         [01;35m[Kdelete invalid[m[K;
+[17.513s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[17.513s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:45:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KState_Passive[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[17.513s]    45 |         [01;35m[Kdelete passive[m[K;
+[17.514s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[17.514s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:46:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KState_FixedStand[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[17.514s]    46 |         [01;35m[Kdelete fixedStand[m[K;
+[17.514s]       |         [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[17.514s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:47:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KState_FreeStand[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[17.514s]    47 |         [01;35m[Kdelete freeStand[m[K;
+[17.514s]       |         [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[17.514s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:48:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KState_Trotting[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[17.514s]    48 |         [01;35m[Kdelete trotting[m[K;
+[17.514s]       |         [01;35m[K^~~~~~~~~~~~~~~[m[K
+[17.514s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:49:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KState_BalanceTest[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[17.514s]    49 |         [01;35m[Kdelete balanceTest[m[K;
+[17.514s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[17.515s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:50:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KState_SwingTest[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[17.515s]    50 |         [01;35m[Kdelete swingTest[m[K;
+[17.515s]       |         [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[17.515s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:51:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KState_StepTest[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[17.515s]    51 |         [01;35m[Kdelete stepTest[m[K;
+[17.515s]       |         [01;35m[K^~~~~~~~~~~~~~~[m[K
+[17.515s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/FSM/FSM.h:56:9:[m[K [01;35m[Kwarning: [m[Kdeleting object of polymorphic class type ‘[01m[KState_move_base[m[K’ which has non-virtual destructor might cause undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdelete-non-virtual-dtor-Wdelete-non-virtual-dtor]8;;[m[K]
+[17.515s]    56 |         [01;35m[Kdelete moveBase[m[K;
+[17.515s]       |         [01;35m[K^~~~~~~~~~~~~~~[m[K
+[17.815s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/KeyBoard.h:15[m[K,
+[17.816s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/interface/KeyBoard.cpp:4[m[K:
+[17.816s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:[m[K In constructor ‘[01m[KAvgCov::AvgCov(unsigned int, std::string, bool, unsigned int, unsigned int, double)[m[K’:
+[17.816s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:278:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KAvgCov::_valueName[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[17.816s]   278 |     std::string [01;35m[K_valueName[m[K;
+[17.816s]       |                 [01;35m[K^~~~~~~~~~[m[K
+[17.816s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:272:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool AvgCov::_avgOnly[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[17.816s]   272 |     bool [01;35m[K_avgOnly[m[K;
+[17.816s]       |          [01;35m[K^~~~~~~~[m[K
+[17.816s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/KeyBoard.h:15[m[K,
+[17.816s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/interface/KeyBoard.cpp:4[m[K:
+[17.816s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:246:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[17.816s]   246 |     [01;35m[KAvgCov[m[K(unsigned int size, std::string name, bool avgOnly=false, unsigned int showPeriod=1000, unsigned int waitCount=5000, double zoomFactor=10000)
+[17.816s]       |     [01;35m[K^~~~~~[m[K
+[17.878s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/interface/KeyBoard.cpp:[m[K In member function ‘[01m[Kvirtual void* KeyBoard::run(void*)[m[K’:
+[17.878s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/interface/KeyBoard.cpp:94:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[17.878s]    94 | void* KeyBoard::run([01;35m[Kvoid *arg[m[K){
+[17.878s]       |                     [01;35m[K~~~~~~^~~[m[K
+[18.407s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/Estimator.cpp:4[m[K:
+[18.407s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/Estimator.h:[m[K In constructor ‘[01m[KEstimator::Estimator(QuadrupedRobot*, LowlevelState*, VecInt4*, Vec4*, double, Vec18, std::string)[m[K’:
+[18.408s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/Estimator.h:90:21:[m[K [01;35m[Kwarning: [m[K‘[01m[KEstimator::_robModel[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[18.408s]    90 |     QuadrupedRobot *[01;35m[K_robModel[m[K;
+[18.408s]       |                     [01;35m[K^~~~~~~~~[m[K
+[18.408s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/Estimator.h:89:20:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KLowlevelState* Estimator::_lowState[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[18.408s]    89 |     LowlevelState* [01;35m[K_lowState[m[K;
+[18.408s]       |                    [01;35m[K^~~~~~~~~[m[K
+[18.408s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/Estimator.cpp:8:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[18.408s]     8 | [01;35m[KEstimator[m[K::Estimator(QuadrupedRobot *robotModel, LowlevelState* lowState,
+[18.408s]       | [01;35m[K^~~~~~~~~[m[K
+[18.408s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/Estimator.cpp:4[m[K:
+[18.408s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/Estimator.h:92:14:[m[K [01;35m[Kwarning: [m[K‘[01m[KEstimator::_contact[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[18.408s]    92 |     VecInt4 *[01;35m[K_contact[m[K;
+[18.408s]       |              [01;35m[K^~~~~~~~[m[K
+[18.408s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/Estimator.h:91:11:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KVec4* Estimator::_phase[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[18.408s]    91 |     Vec4 *[01;35m[K_phase[m[K;
+[18.408s]       |           [01;35m[K^~~~~~[m[K
+[18.409s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/Estimator.cpp:8:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[18.409s]     8 | [01;35m[KEstimator[m[K::Estimator(QuadrupedRobot *robotModel, LowlevelState* lowState,
+[18.409s]       | [01;35m[K^~~~~~~~~[m[K
+[18.409s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/Estimator.cpp:4[m[K:
+[18.409s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/Estimator.h:93:12:[m[K [01;35m[Kwarning: [m[K‘[01m[KEstimator::_dt[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[18.409s]    93 |     double [01;35m[K_dt[m[K;
+[18.409s]       |            [01;35m[K^~~[m[K
+[18.409s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/Estimator.h:71:11:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KVec18 Estimator::_Qdig[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[18.409s]    71 |     Vec18 [01;35m[K_Qdig[m[K;                                    // adjustable process noise covariance
+[18.409s]       |           [01;35m[K^~~~~[m[K
+[18.409s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/Estimator.cpp:8:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[18.409s]     8 | [01;35m[KEstimator[m[K::Estimator(QuadrupedRobot *robotModel, LowlevelState* lowState,
+[18.409s]       | [01;35m[K^~~~~~~~~[m[K
+[18.410s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/Estimator.cpp:4[m[K:
+[18.410s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/Estimator.h:[m[K In constructor ‘[01m[KEstimator::Estimator(QuadrupedRobot*, LowlevelState*, VecInt4*, Vec4*, double)[m[K’:
+[18.410s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/Estimator.h:90:21:[m[K [01;35m[Kwarning: [m[K‘[01m[KEstimator::_robModel[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[18.410s]    90 |     QuadrupedRobot *[01;35m[K_robModel[m[K;
+[18.410s]       |                     [01;35m[K^~~~~~~~~[m[K
+[18.410s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/Estimator.h:89:20:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KLowlevelState* Estimator::_lowState[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[18.410s]    89 |     LowlevelState* [01;35m[K_lowState[m[K;
+[18.410s]       |                    [01;35m[K^~~~~~~~~[m[K
+[18.410s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/Estimator.cpp:17:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[18.410s]    17 | [01;35m[KEstimator[m[K::Estimator(QuadrupedRobot *robotModel, LowlevelState* lowState,
+[18.410s]       | [01;35m[K^~~~~~~~~[m[K
+[18.410s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/Estimator.cpp:4[m[K:
+[18.410s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/Estimator.h:92:14:[m[K [01;35m[Kwarning: [m[K‘[01m[KEstimator::_contact[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[18.410s]    92 |     VecInt4 *[01;35m[K_contact[m[K;
+[18.410s]       |              [01;35m[K^~~~~~~~[m[K
+[18.410s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/control/Estimator.h:91:11:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KVec4* Estimator::_phase[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[18.411s]    91 |     Vec4 *[01;35m[K_phase[m[K;
+[18.411s]       |           [01;35m[K^~~~~~[m[K
+[18.411s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/control/Estimator.cpp:17:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[18.411s]    17 | [01;35m[KEstimator[m[K::Estimator(QuadrupedRobot *robotModel, LowlevelState* lowState,
+[18.411s]       | [01;35m[K^~~~~~~~~[m[K
+[18.722s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:[m[K In function ‘[01m[Kdouble quadprogpp::solve_quadprog(quadprogpp::Matrix<double>&, quadprogpp::Vector<double>&, const quadprogpp::Matrix<double>&, const quadprogpp::Vector<double>&, const quadprogpp::Matrix<double>&, const quadprogpp::Vector<double>&, quadprogpp::Vector<double>&)[m[K’:
+[18.722s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:84:25:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.722s]    84 |   register unsigned int [01;35m[Ki[m[K, j, k, l; /* indices */
+[18.723s]       |                         [01;35m[K^[m[K
+[18.723s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:84:28:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.723s]    84 |   register unsigned int i, [01;35m[Kj[m[K, k, l; /* indices */
+[18.723s]       |                            [01;35m[K^[m[K
+[18.723s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:84:31:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.723s]    84 |   register unsigned int i, j, [01;35m[Kk[m[K, l; /* indices */
+[18.723s]       |                               [01;35m[K^[m[K
+[18.724s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:84:34:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.724s]    84 |   register unsigned int i, j, k, [01;35m[Kl[m[K; /* indices */
+[18.724s]       |                                  [01;35m[K^[m[K
+[18.724s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:120:14:[m[K [01;35m[Kwarning: [m[Kaddress requested for ‘[01m[Ki[m[K’, which is declared ‘[01m[Kregister[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wextra-Wextra]8;;[m[K]
+[18.724s]   120 |     c1 += G[i[01;35m[K][m[K[i];
+[18.725s]       |              [01;35m[K^[m[K
+[18.725s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:143:20:[m[K [01;35m[Kwarning: [m[Kaddress requested for ‘[01m[Kj[m[K’, which is declared ‘[01m[Kregister[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wextra-Wextra]8;;[m[K]
+[18.725s]   143 |       J[i][j] = z[j[01;35m[K][m[K;
+[18.725s]       |                    [01;35m[K^[m[K
+[18.725s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:192:10:[m[K [01;35m[Kwarning: [m[Kaddress requested for ‘[01m[Kk[m[K’, which is declared ‘[01m[Kregister[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wextra-Wextra]8;;[m[K]
+[18.725s]   192 |       x[k[01;35m[K][m[K += t2 * z[k];
+[18.725s]       |          [01;35m[K^[m[K
+[18.725s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:351:10:[m[K [01;35m[Kwarning: [m[Kaddress requested for ‘[01m[Kl[m[K’, which is declared ‘[01m[Kregister[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wextra-Wextra]8;;[m[K]
+[18.725s]   351 |     iai[l[01;35m[K][m[K = l;
+[18.725s]       |          [01;35m[K^[m[K
+[18.727s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:[m[K In function ‘[01m[Kvoid quadprogpp::compute_d(quadprogpp::Vector<double>&, const quadprogpp::Matrix<double>&, const quadprogpp::Vector<double>&)[m[K’:
+[18.727s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:449:16:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.727s]   449 |   register int [01;35m[Ki[m[K, j, n = d.size();
+[18.727s]       |                [01;35m[K^[m[K
+[18.727s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:449:19:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.727s]   449 |   register int i, [01;35m[Kj[m[K, n = d.size();
+[18.727s]       |                   [01;35m[K^[m[K
+[18.728s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:449:22:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.728s]   449 |   register int i, j, [01;35m[Kn[m[K = d.size();
+[18.728s]       |                      [01;35m[K^[m[K
+[18.728s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:450:19:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.728s]   450 |   register double [01;35m[Ksum[m[K;
+[18.728s]       |                   [01;35m[K^~~[m[K
+[18.728s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:[m[K In function ‘[01m[Kvoid quadprogpp::update_z(quadprogpp::Vector<double>&, const quadprogpp::Matrix<double>&, const quadprogpp::Vector<double>&, int)[m[K’:
+[18.728s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:464:16:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.728s]   464 |   register int [01;35m[Ki[m[K, j, n = z.size();
+[18.728s]       |                [01;35m[K^[m[K
+[18.728s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:464:19:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.728s]   464 |   register int i, [01;35m[Kj[m[K, n = z.size();
+[18.728s]       |                   [01;35m[K^[m[K
+[18.731s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:464:22:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.731s]   464 |   register int i, j, [01;35m[Kn[m[K = z.size();
+[18.731s]       |                      [01;35m[K^[m[K
+[18.731s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:[m[K In function ‘[01m[Kvoid quadprogpp::update_r(const quadprogpp::Matrix<double>&, quadprogpp::Vector<double>&, const quadprogpp::Vector<double>&, int)[m[K’:
+[18.732s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:477:16:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.732s]   477 |   register int [01;35m[Ki[m[K, j;
+[18.732s]       |                [01;35m[K^[m[K
+[18.732s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:477:19:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.732s]   477 |   register int i, [01;35m[Kj[m[K;
+[18.732s]       |                   [01;35m[K^[m[K
+[18.732s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:478:19:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.732s]   478 |   register double [01;35m[Ksum[m[K;
+[18.732s]       |                   [01;35m[K^~~[m[K
+[18.732s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:[m[K In function ‘[01m[Kbool quadprogpp::add_constraint(quadprogpp::Matrix<double>&, quadprogpp::Matrix<double>&, quadprogpp::Vector<double>&, unsigned int&, double&)[m[K’:
+[18.732s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:496:25:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.732s]   496 |   register unsigned int [01;35m[Ki[m[K, j, k;
+[18.732s]       |                         [01;35m[K^[m[K
+[18.732s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:496:28:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.732s]   496 |   register unsigned int i, [01;35m[Kj[m[K, k;
+[18.732s]       |                            [01;35m[K^[m[K
+[18.733s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:496:31:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.733s]   496 |   register unsigned int i, j, [01;35m[Kk[m[K;
+[18.733s]       |                               [01;35m[K^[m[K
+[18.733s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:514:13:[m[K [01;35m[Kwarning: [m[Kaddress requested for ‘[01m[Kj[m[K’, which is declared ‘[01m[Kregister[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wextra-Wextra]8;;[m[K]
+[18.733s]   514 |     ss = d[j[01;35m[K][m[K;
+[18.733s]       |             [01;35m[K^[m[K
+[18.733s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:532:15:[m[K [01;35m[Kwarning: [m[Kaddress requested for ‘[01m[Kk[m[K’, which is declared ‘[01m[Kregister[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wextra-Wextra]8;;[m[K]
+[18.733s]   532 |       t1 = J[k[01;35m[K][m[K[j - 1];
+[18.733s]       |               [01;35m[K^[m[K
+[18.733s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:544:8:[m[K [01;35m[Kwarning: [m[Kaddress requested for ‘[01m[Ki[m[K’, which is declared ‘[01m[Kregister[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wextra-Wextra]8;;[m[K]
+[18.733s]   544 |     R[i[01;35m[K][m[K[iq - 1] = d[i];
+[18.733s]       |        [01;35m[K^[m[K
+[18.733s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:[m[K In function ‘[01m[Kvoid quadprogpp::delete_constraint(quadprogpp::Matrix<double>&, quadprogpp::Matrix<double>&, quadprogpp::Vector<int>&, quadprogpp::Vector<double>&, unsigned int, int, unsigned int&, int)[m[K’:
+[18.733s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:566:25:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.734s]   566 |   register unsigned int [01;35m[Ki[m[K, j, k, qq = 0; // just to prevent warnings from smart compilers
+[18.734s]       |                         [01;35m[K^[m[K
+[18.734s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:566:28:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.734s]   566 |   register unsigned int i, [01;35m[Kj[m[K, k, qq = 0; // just to prevent warnings from smart compilers
+[18.734s]       |                            [01;35m[K^[m[K
+[18.734s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:566:31:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.734s]   566 |   register unsigned int i, j, [01;35m[Kk[m[K, qq = 0; // just to prevent warnings from smart compilers
+[18.734s]       |                               [01;35m[K^[m[K
+[18.734s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:566:34:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.734s]   566 |   register unsigned int i, j, k, [01;35m[Kqq[m[K = 0; // just to prevent warnings from smart compilers
+[18.734s]       |                                  [01;35m[K^~[m[K
+[18.734s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:572:12:[m[K [01;35m[Kwarning: [m[Kaddress requested for ‘[01m[Ki[m[K’, which is declared ‘[01m[Kregister[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wextra-Wextra]8;;[m[K]
+[18.734s]   572 |     if (A[i[01;35m[K][m[K == l)
+[18.734s]       |            [01;35m[K^[m[K
+[18.734s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:591:12:[m[K [01;35m[Kwarning: [m[Kaddress requested for ‘[01m[Kj[m[K’, which is declared ‘[01m[Kregister[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wextra-Wextra]8;;[m[K]
+[18.735s]   591 |         R[j[01;35m[K][m[K[i] = R[j][i + 1];
+[18.735s]       |            [01;35m[K^[m[K
+[18.735s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:638:15:[m[K [01;35m[Kwarning: [m[Kaddress requested for ‘[01m[Kk[m[K’, which is declared ‘[01m[Kregister[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wextra-Wextra]8;;[m[K]
+[18.735s]   638 |       t1 = J[k[01;35m[K][m[K[j];
+[18.735s]       |               [01;35m[K^[m[K
+[18.735s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:[m[K In function ‘[01m[Kdouble quadprogpp::distance(double, double)[m[K’:
+[18.735s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:648:19:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.735s]   648 |   register double [01;35m[Ka1[m[K, b1, t;
+[18.735s]       |                   [01;35m[K^~[m[K
+[18.735s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:648:23:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.735s]   648 |   register double a1, [01;35m[Kb1[m[K, t;
+[18.735s]       |                       [01;35m[K^~[m[K
+[18.735s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:648:27:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.735s]   648 |   register double a1, b1, [01;35m[Kt[m[K;
+[18.736s]       |                           [01;35m[K^[m[K
+[18.736s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:[m[K In function ‘[01m[Kdouble quadprogpp::scalar_product(const quadprogpp::Vector<double>&, const quadprogpp::Vector<double>&)[m[K’:
+[18.736s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:668:16:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.736s]   668 |   register int [01;35m[Ki[m[K, n = x.size();
+[18.736s]       |                [01;35m[K^[m[K
+[18.736s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:668:19:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.736s]   668 |   register int i, [01;35m[Kn[m[K = x.size();
+[18.736s]       |                   [01;35m[K^[m[K
+[18.736s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:669:19:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.736s]   669 |   register double [01;35m[Ksum[m[K;
+[18.736s]       |                   [01;35m[K^~~[m[K
+[18.736s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:[m[K In function ‘[01m[Kvoid quadprogpp::cholesky_decomposition(quadprogpp::Matrix<double>&)[m[K’:
+[18.736s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:679:16:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.736s]   679 |   register int [01;35m[Ki[m[K, j, k, n = A.nrows();
+[18.736s]       |                [01;35m[K^[m[K
+[18.736s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:679:19:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.736s]   679 |   register int i, [01;35m[Kj[m[K, k, n = A.nrows();
+[18.736s]       |                   [01;35m[K^[m[K
+[18.737s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:679:22:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.737s]   679 |   register int i, j, [01;35m[Kk[m[K, n = A.nrows();
+[18.737s]       |                      [01;35m[K^[m[K
+[18.737s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:679:25:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.737s]   679 |   register int i, j, k, [01;35m[Kn[m[K = A.nrows();
+[18.737s]       |                         [01;35m[K^[m[K
+[18.737s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:680:19:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.737s]   680 |   register double [01;35m[Ksum[m[K;
+[18.737s]       |                   [01;35m[K^~~[m[K
+[18.737s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:[m[K In function ‘[01m[Kvoid quadprogpp::forward_elimination(const quadprogpp::Matrix<double>&, quadprogpp::Vector<double>&, const quadprogpp::Vector<double>&)[m[K’:
+[18.737s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:723:16:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.737s]   723 |   register int [01;35m[Ki[m[K, j, n = L.nrows();
+[18.737s]       |                [01;35m[K^[m[K
+[18.737s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:723:19:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.737s]   723 |   register int i, [01;35m[Kj[m[K, n = L.nrows();
+[18.737s]       |                   [01;35m[K^[m[K
+[18.738s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:723:22:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.738s]   723 |   register int i, j, [01;35m[Kn[m[K = L.nrows();
+[18.738s]       |                      [01;35m[K^[m[K
+[18.738s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:[m[K In function ‘[01m[Kvoid quadprogpp::backward_elimination(const quadprogpp::Matrix<double>&, quadprogpp::Vector<double>&, const quadprogpp::Vector<double>&)[m[K’:
+[18.738s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:737:16:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.738s]   737 |   register int [01;35m[Ki[m[K, j, n = U.nrows();
+[18.738s]       |                [01;35m[K^[m[K
+[18.738s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:737:19:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.738s]   737 |   register int i, [01;35m[Kj[m[K, n = U.nrows();
+[18.738s]       |                   [01;35m[K^[m[K
+[18.738s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/quadProgpp/QuadProg++.cc:737:22:[m[K [01;35m[Kwarning: [m[KISO C++17 does not allow ‘[01m[Kregister[m[K’ storage class specifier [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wregister-Wregister]8;;[m[K]
+[18.738s]   737 |   register int i, j, [01;35m[Kn[m[K = U.nrows();
+[18.738s]       |                      [01;35m[K^[m[K
+[19.578s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[19.578s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/IOInterface.h:7[m[K,
+[19.578s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/IOROS.h:68[m[K,
+[19.578s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/interface/IOROS.cpp:227[m[K:
+[19.578s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:[m[K In constructor ‘[01m[KAvgCov::AvgCov(unsigned int, std::string, bool, unsigned int, unsigned int, double)[m[K’:
+[19.578s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:278:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KAvgCov::_valueName[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[19.578s]   278 |     std::string [01;35m[K_valueName[m[K;
+[19.578s]       |                 [01;35m[K^~~~~~~~~~[m[K
+[19.578s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:272:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool AvgCov::_avgOnly[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[19.578s]   272 |     bool [01;35m[K_avgOnly[m[K;
+[19.578s]       |          [01;35m[K^~~~~~~~[m[K
+[19.578s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelCmd.h:8[m[K,
+[19.578s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/IOInterface.h:7[m[K,
+[19.578s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/IOROS.h:68[m[K,
+[19.578s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/interface/IOROS.cpp:227[m[K:
+[19.578s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/common/mathTools.h:246:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[19.578s]   246 |     [01;35m[KAvgCov[m[K(unsigned int size, std::string name, bool avgOnly=false, unsigned int showPeriod=1000, unsigned int waitCount=5000, double zoomFactor=10000)
+[19.578s]       |     [01;35m[K^~~~~~[m[K
+[19.616s] In file included from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/message/LowlevelState.h:10[m[K,
+[19.616s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/IOInterface.h:8[m[K,
+[19.616s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/IOROS.h:68[m[K,
+[19.616s]                  from [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/interface/IOROS.cpp:227[m[K:
+[19.616s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:[m[K In member function ‘[01m[Kvirtual void* CmdPanel::run(void*)[m[K’:
+[19.617s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/include/interface/CmdPanel.h:50:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[19.617s]    50 |     virtual void* run([01;35m[Kvoid *arg[m[K){return NULL;}
+[19.617s]       |                       [01;35m[K~~~~~~^~~[m[K
+[19.835s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/interface/IOROS.cpp:[m[K In static member function ‘[01m[Kstatic void IOROS::RosShutDown(int)[m[K’:
+[19.835s] [01m[K/home/syx/ros2_ws/src/unitree_guide2/src/interface/IOROS.cpp:236:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksig[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[19.835s]   236 | void IOROS::RosShutDown([01;35m[Kint sig[m[K){
+[19.835s]       |                         [01;35m[K~~~~^~~[m[K
+[34.147s] [100%] [32m[1mLinking CXX executable junior_ctrl[0m
+[34.334s] [100%] Built target junior_ctrl
+[34.341s] Invoked command in '/home/syx/ros2_ws/build/unitree_guide2' returned '0': CMAKE_PREFIX_PATH=/home/syx/ros2_ws/install/ros2_unitree_legged_msgs:/home/syx/ros2_ws/install/unitree_guide2:/home/syx/ros2_ws/install/ros2_unitree_legged_control:/home/syx/ros2_ws/install/go1_gazebo:/home/syx/ros2_ws/install/go1_description:/home/syx/ros2_ws/install/go1_navigation:/opt/ros/humble LD_LIBRARY_PATH=/home/syx/ros2_ws/install/ros2_unitree_legged_msgs/lib:/home/syx/ros2_ws/install/ros2_unitree_legged_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/syx/ros2_ws/build/unitree_guide2 -- -j8 -l8
+[34.343s] Invoking command in '/home/syx/ros2_ws/build/unitree_guide2': CMAKE_PREFIX_PATH=/home/syx/ros2_ws/install/ros2_unitree_legged_msgs:/home/syx/ros2_ws/install/unitree_guide2:/home/syx/ros2_ws/install/ros2_unitree_legged_control:/home/syx/ros2_ws/install/go1_gazebo:/home/syx/ros2_ws/install/go1_description:/home/syx/ros2_ws/install/go1_navigation:/opt/ros/humble LD_LIBRARY_PATH=/home/syx/ros2_ws/install/ros2_unitree_legged_msgs/lib:/home/syx/ros2_ws/install/ros2_unitree_legged_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/syx/ros2_ws/build/unitree_guide2
+[34.347s] -- Install configuration: ""
+[34.347s] -- Installing: /home/syx/ros2_ws/install/unitree_guide2/lib/unitree_guide2/junior_ctrl
+[34.349s] -- Set runtime path of "/home/syx/ros2_ws/install/unitree_guide2/lib/unitree_guide2/junior_ctrl" to ""
+[34.349s] -- Installing: /home/syx/ros2_ws/install/unitree_guide2/share/ament_index/resource_index/package_run_dependencies/unitree_guide2
+[34.349s] -- Installing: /home/syx/ros2_ws/install/unitree_guide2/share/ament_index/resource_index/parent_prefix_path/unitree_guide2
+[34.349s] -- Installing: /home/syx/ros2_ws/install/unitree_guide2/share/unitree_guide2/environment/ament_prefix_path.sh
+[34.349s] -- Installing: /home/syx/ros2_ws/install/unitree_guide2/share/unitree_guide2/environment/ament_prefix_path.dsv
+[34.349s] -- Installing: /home/syx/ros2_ws/install/unitree_guide2/share/unitree_guide2/environment/path.sh
+[34.349s] -- Installing: /home/syx/ros2_ws/install/unitree_guide2/share/unitree_guide2/environment/path.dsv
+[34.349s] -- Installing: /home/syx/ros2_ws/install/unitree_guide2/share/unitree_guide2/local_setup.bash
+[34.349s] -- Installing: /home/syx/ros2_ws/install/unitree_guide2/share/unitree_guide2/local_setup.sh
+[34.349s] -- Installing: /home/syx/ros2_ws/install/unitree_guide2/share/unitree_guide2/local_setup.zsh
+[34.349s] -- Installing: /home/syx/ros2_ws/install/unitree_guide2/share/unitree_guide2/local_setup.dsv
+[34.349s] -- Installing: /home/syx/ros2_ws/install/unitree_guide2/share/unitree_guide2/package.dsv
+[34.349s] -- Installing: /home/syx/ros2_ws/install/unitree_guide2/share/ament_index/resource_index/packages/unitree_guide2
+[34.350s] -- Installing: /home/syx/ros2_ws/install/unitree_guide2/share/unitree_guide2/cmake/unitree_guide2Config.cmake
+[34.350s] -- Installing: /home/syx/ros2_ws/install/unitree_guide2/share/unitree_guide2/cmake/unitree_guide2Config-version.cmake
+[34.350s] -- Installing: /home/syx/ros2_ws/install/unitree_guide2/share/unitree_guide2/package.xml
+[34.351s] Invoked command in '/home/syx/ros2_ws/build/unitree_guide2' returned '0': CMAKE_PREFIX_PATH=/home/syx/ros2_ws/install/ros2_unitree_legged_msgs:/home/syx/ros2_ws/install/unitree_guide2:/home/syx/ros2_ws/install/ros2_unitree_legged_control:/home/syx/ros2_ws/install/go1_gazebo:/home/syx/ros2_ws/install/go1_description:/home/syx/ros2_ws/install/go1_navigation:/opt/ros/humble LD_LIBRARY_PATH=/home/syx/ros2_ws/install/ros2_unitree_legged_msgs/lib:/home/syx/ros2_ws/install/ros2_unitree_legged_control/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/syx/ros2_ws/build/unitree_guide2
