@@ -270,6 +270,6 @@ velocity_smoother:
 
 map_server:
   ros__parameters:
-    yaml_filename: "/home/ros2_ws/map/my_dog.yaml"
+    yaml_filename: "/home/syx/ros2_ws/map/my_dog.yaml"
     topic_name: "map"
     frame_id: "map"
