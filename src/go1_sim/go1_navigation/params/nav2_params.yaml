@@ -273,3 +273,8 @@ map_server:
     yaml_filename: "/home/syx/ros2_ws/map/my_dog.yaml"
     topic_name: "map"
     frame_id: "map"
+amcl:
+  ros__parameters:
+    odom_frame_id: "odom"          # 必须与里程计坐标系一致
+    base_frame_id: "base_link"     # 必须与机器人基坐标系一致
+    global_frame_id: "map"         # ← 关键参数！
